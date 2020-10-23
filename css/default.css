@@ -1,0 +1,779 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+預設文字
+*/
+/*
+body{
+font-family: 'Noto Sans TC', sans-serif;
+}
+    */
+@font-face {
+  font-family: 'ChunkFiveRegular';
+  src: url("fonts/chunkfive.eot");
+}
+
+body {
+  font-family: 微軟正黑體,ChunkFiveRegular, Times New Roman, Georgia;
+}
+
+/*
+所有圖片的預設樣式
+自動放大到與div相同大小
+*/
+img {
+  color: black;
+  max-width: 100%;
+}
+
+/*
+預設清單風格
+去除符號和多出來的空格
+*/
+ul {
+  list-style: none;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+去除超連接的樣式
+*/
+a {
+  text-decoration: none;
+}
+
+#edenTabsSub .tab1 {
+  display: block;
+}
+
+#edenTabsSub .tab2 {
+  display: none;
+}
+
+.edenTabsSub {
+  margin-top: 20px;
+}
+
+.edenTabsH1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.edenTabsH1 a:link {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH1 a:visited {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH1 a:hover {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH1 a:active {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH1 .tab1 {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f46c23;
+}
+
+.edenTabsH1 .tab2 {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #4d4d4d;
+}
+
+.edenTabsH1 .tab2:hover {
+  background-color: #797979;
+}
+
+.edenTabsH2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.edenTabsH2 a:link {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH2 a:visited {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH2 a:hover {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH2 a:active {
+  font-weight: 700;
+  color: white;
+}
+
+.edenTabsH2 .tab1 {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f46c23;
+}
+
+.edenTabsH2 .tab2 {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #4d4d4d;
+}
+
+.edenTabsH2 .tab2:hover {
+  background-color: #797979;
+}
+
+.edenTabsH2Sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.edenTabsH2Sub a:link {
+  font-weight: 700;
+  color: #f46c23;
+}
+
+.edenTabsH2Sub a:visited {
+  font-weight: 700;
+  color: #f46c23;
+}
+
+.edenTabsH2Sub a:hover {
+  font-weight: 700;
+  color: #f46c23;
+}
+
+.edenTabsH2Sub a:active {
+  font-weight: 700;
+  color: #f46c23;
+}
+
+.edenTabsH2Sub .tab1 {
+  text-align: center;
+  border: 2px solid white;
+  border-bottom: 2px solid #f46c23;
+  width: 100px;
+}
+
+.edenTabsH2Sub .tab2 {
+  text-align: center;
+  width: 100px;
+}
+
+.edenTabsH2Sub .tab2:hover {
+  border: 2px solid #f46c23;
+}
+
+.edenTabsH3 {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.edenTabsH3 a:link {
+  color: white;
+}
+
+.edenTabsH3 a:visited {
+  color: white;
+}
+
+.edenTabsH3 a:hover {
+  color: white;
+}
+
+.edenTabsH3 a:active {
+  color: white;
+}
+
+.edenTabsH3 .tab1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 6px solid #f46c23;
+  padding-bottom: 15px;
+}
+
+.edenTabsH3 .tab1 span {
+  font-weight: bold;
+  background-image: url("tabs/img/橘色圓形.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 53px;
+  width: 53px;
+  text-align: center;
+  line-height: 53px;
+}
+
+.edenTabsH3 .tab1 div {
+  background-color: #f46c23;
+  margin-left: 5px;
+  margin-top: 18px;
+  width: 120px;
+  height: 18px;
+}
+
+.edenTabsH3 .tab2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 6px solid #757575;
+  padding-bottom: 15px;
+}
+
+.edenTabsH3 .tab2 span {
+  font-weight: bold;
+  background-image: url("tabs/img/灰色圓形.svg");
+  background-repeat: no-repeat;
+  background-position: 0%;
+  height: 53px;
+  width: 53px;
+  text-align: center;
+  line-height: 53px;
+}
+
+.edenTabsH3 .tab2 div {
+  background-color: #757575;
+  margin-left: 5px;
+  margin-top: 18px;
+  width: 120px;
+  height: 18px;
+}
+
+.edenTabsH4 {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.edenTabsH4 a:link {
+  color: white;
+}
+
+.edenTabsH4 a:visited {
+  color: white;
+}
+
+.edenTabsH4 a:hover {
+  color: white;
+}
+
+.edenTabsH4 a:active {
+  color: white;
+}
+
+.edenTabsH4 .tab1 {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edenTabsH4 .tab1 span {
+  font-weight: bold;
+  background-image: url("tabs/img/橘色圓形.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 53px;
+  width: 53px;
+  text-align: center;
+  line-height: 53px;
+  z-index: 2;
+  margin: auto;
+}
+
+.edenTabsH4 .tab1 div:first-of-type {
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  left: 0;
+  background-color: #f46c23;
+  width: 100%;
+  height: 9px;
+}
+
+.edenTabsH4 .tab1 div:last-of-type {
+  position: absolute;
+  z-index: 1;
+  left: 10%;
+  background-color: #f46c23;
+  width: 80%;
+  height: 18px;
+  margin-top: 65px;
+}
+
+.edenTabsH4 .tab2 {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edenTabsH4 .tab2 span {
+  font-weight: bold;
+  background-image: url("tabs/img/灰色圓形.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 53px;
+  width: 53px;
+  text-align: center;
+  line-height: 53px;
+  z-index: 2;
+  margin: auto;
+}
+
+.edenTabsH4 .tab2 div:first-of-type {
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  left: 0;
+  background-color: #757575;
+  width: 100%;
+  height: 9px;
+}
+
+.edenTabsH4 .tab2 div:last-of-type {
+  position: absolute;
+  z-index: 1;
+  left: 10%;
+  background-color: #757575;
+  width: 80%;
+  height: 18px;
+  margin-top: 65px;
+}
+
+.edenTabsH4Sub {
+  margin-top: 50px;
+}
+
+.edenTabsV1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edenTabsV1 .edenTabsV1Left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.edenTabsV1 .edenTabsV1Left span {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.edenTabsV1 .edenTabsV1Left .tab1 {
+  background-color: #f2f2f2;
+  height: 100px;
+  padding: 20px;
+  color: #797979;
+}
+
+.edenTabsV1 .edenTabsV1Left .tab1 h3 {
+  margin: 0.2em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.edenTabsV1 .edenTabsV1Left .tab2 {
+  background-color: #4d4d4d;
+  height: 100px;
+  padding: 20px;
+  color: #f2f2f2;
+}
+
+.edenTabsV1 .edenTabsV1Left .tab2 h3 {
+  margin: 0.2em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.edenTabsV1 .edenTabsV1Left .tab2:hover {
+  background-color: #797979;
+}
+
+.edenTabsV1 .edenTabsV1Right {
+  width: 70%;
+  background-color: #f2f2f2;
+}
+
+.edenTabsV2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edenTabsV2 .edenTabsV2Left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  background-color: #f2f2f2;
+}
+
+.edenTabsV2 .edenTabsV2Left a:link {
+  color: black;
+}
+
+.edenTabsV2 .edenTabsV2Left a:visited {
+  color: black;
+}
+
+.edenTabsV2 .edenTabsV2Left a:hover {
+  color: black;
+}
+
+.edenTabsV2 .edenTabsV2Left a:active {
+  color: black;
+}
+
+.edenTabsV2 .edenTabsV2Left span {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.edenTabsV2 .edenTabsV2Left .tab1 {
+  background-color: white;
+  height: 100px;
+  margin: 15px;
+  padding: 15px;
+  color: #797979;
+}
+
+.edenTabsV2 .edenTabsV2Left .tab1 h3 {
+  margin: 0.2em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.edenTabsV2 .edenTabsV2Left .tab2 {
+  height: 100px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.edenTabsV2 .edenTabsV2Left .tab2 h3 {
+  margin: 0.2em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.edenTabsV2 .edenTabsV2Left .tab2:hover {
+  border: black solid 2px;
+}
+
+.edenTabsV2 .edenTabsV2Right {
+  width: 70%;
+}
+
+.edenTabsV3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edenTabsV3 .edenTabsV3Left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Line {
+  position: relative;
+  left: 16px;
+  border-right: 8px solid #f46c23;
+  height: 0%;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 4px solid #eeeeee;
+  margin: 0 10px;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 span {
+  margin: 0 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 53px;
+          flex: 0 0 53px;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: url("tabs/img/橘色圓形.svg");
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 53px;
+  color: white;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 a {
+  color: #f46c23;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 a h3 {
+  margin: 14px 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 a p {
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 span {
+  margin: 0 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 53px;
+          flex: 0 0 53px;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: url("tabs/img/灰色圓形.svg");
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 53px;
+  color: white;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 a {
+  color: #7b7b7b;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 a h3 {
+  margin: 14px 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 a p {
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.edenTabsV3 .edenTabsV3Right {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 3 300px;
+          flex: 3 3 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.edenTabsV3 .edenTabsV3Right .v3RTab1 {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+}
+
+.edenTabsV3 .edenTabsV3Right .v3RTab2 {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  display: none;
+}
+
+.edenTabsV3 .edenTabsV3Right .btV3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.edenTabsV3 .edenTabsV3Right .btV3 button {
+  height: 36px;
+  color: white;
+  font-weight: bolder;
+  background-color: #f46c23;
+  padding: 0 35px;
+  border-radius: 0.3em;
+  font-size: 110%;
+  -webkit-box-shadow: 3px 3px 3px #a8a8a8;
+          box-shadow: 3px 3px 3px #a8a8a8;
+  border: 0;
+  outline: none;
+}
+
+.edenTabsV3 .edenTabsV3Right .btV3 button:hover {
+  background-color: #797979;
+}
+/*# sourceMappingURL=default.css.map */

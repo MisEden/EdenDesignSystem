@@ -1,0 +1,127 @@
+header {
+  background-color: #555555;
+  height: 56px;
+  line-height: 56px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+header .hamburger {
+  display: none;
+}
+
+header div {
+  background-color: #555555;
+}
+
+header h1 {
+  color: white;
+  font-size: 24px;
+  height: 60px;
+  line-height: 56px;
+}
+
+header .edenMenu {
+  text-align: center;
+  z-index: 9998;
+}
+
+header .edenh1 {
+  background-color: #f46c23;
+}
+
+header .edenh2:hover {
+  background-color: #717171;
+}
+
+header a {
+  color: white;
+  font-size: 20px;
+}
+
+header a:hover {
+  color: white;
+}
+
+header a:active {
+  color: white;
+}
+
+header .edenUserData {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  z-index: 9999;
+}
+
+header .edenUserData #edenUserIcon {
+  font-size: 24px;
+}
+
+header .edenUserData .sub {
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+  width: 200px;
+  right: 20px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 2px #d7d7d7;
+          box-shadow: 2px 2px 2px #d7d7d7;
+  border: 1px #f2f2f2 solid;
+}
+
+header .edenUserData .sub a {
+  color: #555555;
+  font-size: 24px;
+}
+
+header .edenUserData .sub a:hover {
+  color: #555555;
+}
+
+header .edenUserData .sub a:active {
+  color: #555555;
+}
+
+header .edenUserData:hover {
+  background-color: #757575;
+}
+
+.edenHeader2 .hamburger {
+  display: inline;
+  text-decoration: none;
+}
+
+.edenHeader2 .edenSurchBar {
+  position: absolute;
+  top: 0;
+  right: 75px;
+  padding-top: 0px;
+  font-size: 24px;
+  height: 56px;
+}
+
+.edenHeader2 .edenSurchBar #edenSearch {
+  background-color: #757575;
+  border: 0;
+  outline: none;
+  width: 250px;
+  height: 56px;
+}
+
+.edenHeader2 .edenSurchBar #edenSurchOpenClose {
+  font-size: 24px;
+  width: 56px;
+  text-align: center;
+}
+
+.edenHeader2 .edenSurchBar #edenSurchSubmit {
+  font-size: 24px;
+  width: 56px;
+  text-align: center;
+}
+/*# sourceMappingURL=style_tablet.css.map */

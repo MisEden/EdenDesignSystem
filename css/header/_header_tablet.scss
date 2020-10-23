@@ -1,0 +1,131 @@
+header {
+    background-color: #555555;
+    height: 56px;
+    line-height: 56px;
+    overflow: hidden;
+    font-weight: bold;
+
+    .hamburger {
+        display: none;
+    }
+
+    div {
+        background-color: #555555;
+    }
+
+    h1 {
+        color: white;
+        font-size: 24px;
+        height: 60px;
+        line-height: 56px;
+    }
+
+    .edenMenu {
+        text-align: center;
+        z-index: 9998;
+    }
+
+    .edenh1 {
+        background-color: #f46c23;
+    }
+
+    .edenh2:hover {
+        background-color: #717171;
+    }
+
+    a {
+        color: white;
+        font-size: 20px;
+    }
+
+    a:hover {
+        //當使用者滑鼠滑過去的時候
+        color: white;
+    }
+
+    a:active {
+        //當使用者點擊的時候
+        color: white;
+    }
+
+    .edenUserData {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        text-align: center;
+        width: 56px;
+        height: 56px;
+        z-index: 9999;
+
+        #edenUserIcon {
+            font-size: 24px;
+        }
+
+        .sub {
+            a {
+                color: #555555;
+                font-size: 24px;
+            }
+
+            a:hover {
+                //當使用者滑鼠滑過去的時候
+                color: #555555;
+            }
+
+            a:active {
+                //當使用者點擊的時候
+                color: #555555;
+            }
+
+            background-color: white;
+            border-radius: 10px;
+            position: fixed;
+            width: 200px;
+            right: 20px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 2px 2px 2px #d7d7d7;
+            border: 1px #f2f2f2 solid;
+        }
+    }
+
+    .edenUserData:hover {
+        background-color: #757575;
+    }
+}
+
+.edenHeader2 {
+    .hamburger {
+        display: inline;
+        text-decoration: none;
+    }
+
+    .edenSurchBar {
+        position: absolute;
+        top: 0;
+        right: 75px;
+        padding-top: 0px;
+        font-size: 24px;
+        height: 56px;
+
+        #edenSearch {
+            background-color: #757575;
+            border: 0; // 去除未选中状态边框
+            outline: none; // 去除选中状态边框
+            width: 250px;
+            height: 56px;
+        }
+
+        #edenSurchOpenClose {
+            font-size: 24px;
+            width: 56px;
+            text-align: center;
+        }
+
+        #edenSurchSubmit {
+            font-size: 24px;
+            width: 56px;
+            text-align: center;
+        }
+    }
+}
