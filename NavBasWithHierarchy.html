@@ -4,8 +4,6 @@
     <!--圖示-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="js/jquery-1.11.1.js"></script>
-
 
     <!--伊甸套版-->
     <link href="css/default.css" rel="stylesheet" />
@@ -14,35 +12,7 @@
         rel="stylesheet" />
     <link href="css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
 
-    <!--Redio 可取消點選-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    </script>
-    <script type="text/javascript">
-        $(function () {
-            $('input:radio').click(function () {
-                var domName = $(this).attr('name');
-                var $radio = $(this);
-                if ($radio.data('waschecked') == true) {
-                    $radio.prop('checked', false);
-                    $("input:radio[name='" + domName + "']").data('waschecked', false);
-                } else {
-                    $radio.prop('checked', true);
-                    $("input:radio[name='" + domName + "']").data('waschecked', false);
-                    $radio.data('waschecked', true);
-                }
-
-            });
-        });
-    </script>
-
-
-<style>
-
-
-</style>
-
 </head>
-
 <body>
     <div class="Big">
         <div class="PC">
@@ -361,7 +331,23 @@
         </script>
     <script src="js/leftpanel_animation.js"></script>
 
+    <script type="text/javascript">
+        $(function () {
+            $('input:radio').click(function () {
+                var domName = $(this).attr('name');
+                var $radio = $(this);
+                if ($radio.data('waschecked') == true) {
+                    $radio.prop('checked', false);
+                    $("input:radio[name='" + domName + "']").data('waschecked', false);
+                } else {
+                    $radio.prop('checked', true);
+                    $("input:radio[name='" + domName + "']").data('waschecked', false);
+                    $radio.data('waschecked', true);
+                }
 
+            });
+        });
+    </script>    
 
 </body>
 
