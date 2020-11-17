@@ -119,4 +119,481 @@ header .edenUserData:hover {
   width: 48px;
   text-align: center;
 }
+
+.FixNav_2phone ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.FixNav_2phone ul li {
+  position: relative;
+}
+
+.FixNav_2phone ul li p {
+  margin: 0;
+}
+
+.FixNav_2phone ul li p a {
+  background: #555555;
+  color: #fff;
+  font-size: 12pt;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.FixNav_2phone ul li p a:hover {
+  background-color: #555555;
+  color: #000000;
+  text-decoration: none;
+}
+
+.FixNav_2phone ul li a[href="#foo"] {
+  height: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.FixNav_2phone ul li a[href="#foo"]::before {
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  right: 10px;
+  top: 27px;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.FixNav_2phone ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.FixNav_2phone ul li ul li a {
+  background: #A28f8f;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+  height: 20px;
+}
+
+.FixNav_2phone ul li ul li a:hover {
+  background: #938181;
+}
+
+.FixNav_2phone ul ul:target {
+  max-height: 800px;
+  -webkit-transition: max-height 2s ease-out;
+  transition: max-height 2s ease-out;
+}
+
+.FixNav_1phone ul {
+  list-style: none;
+  margin: 0;
+  width: 328px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.FixNav_1phone ul li {
+  position: relative;
+  padding: 8px;
+}
+
+.FixNav_1phone ul li div {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.FixNav_1phone ul li div p {
+  margin: 0;
+}
+
+.FixNav_1phone ul li div p a {
+  color: #000000;
+  font-size: 12pt;
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.FixNav_1phone ul li p a:hover {
+  background-color: #555555;
+  color: #000000;
+  text-decoration: none;
+}
+
+.FixNav_1phone ul li a[href="#foo"] {
+  height: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.FixNav_1phone ul li a[href="#foo"]::before {
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  right: 10px;
+  top: 27px;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.FixNav_1phone ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.FixNav_1phone ul li ul li a {
+  background: #555555;
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  color: #ffffff;
+  height: 16px;
+}
+
+.FixNav_1phone ul li ul li a:hover {
+  background: #555555;
+}
+
+.FixNav_1phone ul ul:target {
+  max-height: 800px;
+  -webkit-transition: max-height 2s ease-out;
+  transition: max-height 2s ease-out;
+}
+
+.FixNavWithHierarchy_phone ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.FixNavWithHierarchy_phone ul li label {
+  background: #555555;
+  /* fallback colour */
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  display: block;
+  padding: 14px;
+  width: 100%;
+  font-size: 14pt;
+}
+
+.FixNavWithHierarchy_phone ul li input[type='radio'] {
+  display: none;
+}
+
+.FixNavWithHierarchy_phone ul li i {
+  font-size: 16pt;
+  vertical-align: middle;
+  width: 20px;
+  display: inline-block;
+}
+
+.FixNavWithHierarchy_phone ul li span {
+  display: inline;
+  float: right;
+  background: #555555;
+  font-size: 14pt;
+  text-align: center;
+}
+
+.FixNavWithHierarchy_phone ul li label:hover {
+  background: #999999;
+  /* fallback colour */
+}
+
+.FixNavWithHierarchy_phone ul li label:hover span {
+  background: #999999;
+}
+
+.FixNavWithHierarchy_phone ul li input[type='radio']:checked ~ label {
+  background: #999999;
+  /* fallback colour */
+}
+
+.FixNavWithHierarchy_phone ul li input[type='radio']:checked ~ label span {
+  background: #999999;
+  /* fallback colour */
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-right: 5px;
+  text-align: center;
+}
+
+.FixNavWithHierarchy_phone ul li input[type='radio']:checked ~ .options {
+  height: auto;
+  display: block;
+  min-height: 40px;
+  max-height: 400px;
+}
+
+.FixNavWithHierarchy_phone ul ul {
+  background: #555555;
+  color: #FFFFFF;
+}
+
+.FixNavWithHierarchy_phone ul ul li a {
+  display: block;
+  padding: 6px 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 60px;
+  font-size: 12pt;
+}
+
+.FixNavWithHierarchy_phone ul ul li a:hover {
+  color: #FFFFFF;
+  background-color: #999999;
+  text-decoration: none;
+}
+
+.FixNavWithHierarchy_phone ul ul li a span {
+  color: #FFFFFF;
+}
+
+.FixNavWithHierarchy_phone .options {
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.NavBasWithHierarchy ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.NavBasWithHierarchy ul li label {
+  background: #555555;
+  /* fallback colour */
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  display: block;
+  padding: 14px;
+  width: 100%;
+  font-size: 14pt;
+}
+
+.NavBasWithHierarchy ul li input[type='radio'] {
+  display: none;
+}
+
+.NavBasWithHierarchy ul li i {
+  font-size: 16pt;
+  vertical-align: middle;
+  width: 20px;
+  display: inline-block;
+}
+
+.NavBasWithHierarchy ul li span {
+  display: inline;
+  float: right;
+  background: #555555;
+  font-size: 14pt;
+  text-align: center;
+}
+
+.NavBasWithHierarchy ul li label:hover {
+  background: #999999;
+  /* fallback colour */
+}
+
+.NavBasWithHierarchy ul li label:hover span {
+  background: #999999;
+}
+
+.NavBasWithHierarchy ul li input[type='radio']:checked ~ label {
+  background: #999999;
+  /* fallback colour */
+}
+
+.NavBasWithHierarchy ul li input[type='radio']:checked ~ label span {
+  background: #999999;
+  /* fallback colour */
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-right: 5px;
+  text-align: center;
+}
+
+.NavBasWithHierarchy ul li input[type='radio']:checked ~ .options {
+  height: auto;
+  display: block;
+  min-height: 40px;
+  max-height: 400px;
+}
+
+.NavBasWithHierarchy ul ul {
+  background: #555555;
+  color: #FFFFFF;
+}
+
+.NavBasWithHierarchy ul ul li a {
+  display: block;
+  padding: 6px 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 60px;
+  font-size: 12pt;
+}
+
+.NavBasWithHierarchy ul ul li a:hover {
+  color: #FFFFFF;
+  background-color: #999999;
+  text-decoration: none;
+}
+
+.NavBasWithHierarchy ul ul li a span {
+  color: #FFFFFF;
+}
+
+.NavBasWithHierarchy .options {
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.NavBas_phone ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.NavBas_phone ul li {
+  position: relative;
+  padding: 8px;
+}
+
+.NavBas_phone ul li div p {
+  margin: 0;
+}
+
+.NavBas_phone ul li div p a {
+  color: #FFFFFF;
+  font-size: 12pt;
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.NavBas_phone ul li p a:hover {
+  background-color: #555555;
+  color: #000000;
+  text-decoration: none;
+}
+
+.NavBas_phone ul li a[href="#foo"] {
+  height: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.NavBas_phone ul li a[href="#foo"]::before {
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  right: 10px;
+  top: 27px;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.NavBas_phone ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.NavBas_phone ul li ul li a {
+  background: #555555;
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  color: #ffffff;
+  height: 16px;
+}
+
+.NavBas_phone ul li ul li a:hover {
+  background: #555555;
+}
+
+.NavBas_phone ul ul:target {
+  max-height: 800px;
+  -webkit-transition: max-height 2s ease-out;
+  transition: max-height 2s ease-out;
+}
+
+.hamburg {
+  display: block;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  background-color: #555555;
+  color: white;
+  text-align: center;
+}
+
+.hamburg table {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hamburg:hover {
+  text-decoration: none;
+  background: #999999;
+}
 /*# sourceMappingURL=style_phone.css.map */

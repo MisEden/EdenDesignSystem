@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="網頁的描述 這裡的文字會顯示在搜索後的結果呈現">
+    <meta name="keywords" content="關鍵字" />
+    <meta http-equiv="author" content="DarrenTsao" />
+    <title>Document</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--圖示-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--伊甸套版-->
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/style_pc.css" media="screen and (min-width:1200px)" rel="stylesheet" /><!-- -->
+    <link href="css/style_tablet.css" media="screen and (min-width:768px) and (max-width:1199px)"
+        rel="stylesheet" />
+    <link href="css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
+
+    <!--Redio 可取消點選-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $('input:radio').click(function(){
+                var domName = $(this).attr('name');
+                var $radio = $(this);
+                if ($radio.data('waschecked') == true){
+                    $radio.prop('checked', false);
+                    $("input:radio[name='" + domName + "']").data('waschecked',false);
+                } else {
+                    $radio.prop('checked', true);
+                    $("input:radio[name='" + domName + "']").data('waschecked',false);
+                    $radio.data('waschecked', true);
+                }
+                
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div>
+
+
+        <div class="pcStyle">
+
+            <div class="col-sm-6 col-md-3 col-xl-2" style="background-color:#555555;height:970px ;">
+                <div class="FixNavWithHierarchy">
+                    <ul>
+                        <li class="block">
+                            <input type="radio" name="item" id="item1" />   
+                            <label for="item1"><c class='fas fa-circle' style="color:#FFFFFF"></c>　諮詢服務<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#"> 諮詢服務</a></li>
+                            </ul>
+                        </li>
+                        <li class="block">
+                            <input type="radio" name="item" id="item2" />   
+                            <label for="item2"><c class='fas fa-circle' style="color:#FFFFFF"></c>　資料查詢<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#"> 服務使用者查詢 </a></li>
+                                <li><a href="#"> 服務申請單查詢 </a></li>
+                                <li><a href="#"> 評估派案單查詢 </a></li>
+                                <li><a href="#"> 輔具借用單查詢 </a></li>
+                                <li><a href="#"> 輔具維修單查詢 </a></li>
+                                <li><a href="#"> 輔具回收/捐贈單查詢 </a></li>
+                                <li><a href="#"> 排隊等候單查詢 </a></li>
+                                <li><a href="#"> 轉介單查詢 </a></li>
+                                
+                            </ul>
+                           
+                        </li>
+                        <li class="block">
+                            <input type="radio" name="item" id="item3" />   
+                            <label for="item3"><c class='fas fa-circle' style="color:#FFFFFF"></c>　輔具管理<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#" > 所有輔具狀況</a></li>
+                                <li><a href="#" > 輔具保證金及租金設定</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item4" />   
+                            <label for="item4"><c class='fas fa-circle' style="color:#FFFFFF"></c>　輔具維修師選單<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#" > 待填輔具維修單列表</a></li>
+                                <li><a href="#" > 待填捐贈/回收單列表</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item5" />   
+                            <label for="item5"><c class='fas fa-circle' style="color:#FFFFFF"></c>　正職評估人員選單<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">待填評估單派案單</a></li>
+                                <li><a href="#">待核可評估單派案單</a></li>
+                                <li><a href="#">派案單查詢(已結案)</a></li>
+                                <li><a href="#">待核可輔具維修單</a></li>
+                                <li><a href="#">待核可輔具回收/捐贈單</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item6" />   
+                            <label for="item6"><c class='fas fa-circle' style="color:#FFFFFF"></c>　兼職評估人員選單<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">待填評估單派案單</a></li>
+                            </ul>
+                        </li>
+                
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item7" />   
+                            <label for="item7"><c class='fas fa-circle' style="color:#FFFFFF"></c>　權限控管<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">權限管理</a></li>
+                                <li><a href="#">新增中心管理</a></li>
+                                <li><a href="#">收據參數設定</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item8" />   
+                            <label for="item8"><c class='fas fa-circle' style="color:#FFFFFF"></c>　最高權限管理者<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">最高權限管理者</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item9" />   
+                            <label for="item9"><c class='fas fa-circle' style="color:#FFFFFF"></c>　報表功能<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">諮詢資料匯出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="phoneStyle">
+            <a class=hamburg href='#'>
+                <table style=" text-align: center;">
+                <tr>
+                    <td style="text-align: center;vertical-align: middle; width: 48px;height: 48px;">
+                        <i class="fa fa-bars"
+                            style="color:#FFFFFF;font-size:24px ;"></i>
+                        <j class="fa fa-close"
+                            style="color:#FFFFFF;font-size:24px ;">
+                        </j>
+                    </td>
+                </tr>
+            </table>
+        </a>
+            <div style="background-color:#555555;width:100%;">
+
+                <div class="FixNavWithHierarchy_phone">
+                    <ul>
+                        <li class="block">
+                            <input type="radio" name="item" id="item11" />   
+                            <label for="item11"><c class='fas fa-circle' style="color:#FFFFFF"></c>　諮詢服務<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#"> 諮詢服務</a></li>
+                            </ul>
+                        </li>
+                        <li class="block">
+                            <input type="radio" name="item" id="item12" />   
+                            <label for="item12"><c class='fas fa-circle' style="color:#FFFFFF"></c>　資料查詢<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#"> 服務使用者查詢 </a></li>
+                                <li><a href="#"> 服務申請單查詢 </a></li>
+                                <li><a href="#"> 評估派案單查詢 </a></li>
+                                <li><a href="#"> 輔具借用單查詢 </a></li>
+                                <li><a href="#"> 輔具維修單查詢 </a></li>
+                                <li><a href="#"> 輔具回收/捐贈單查詢 </a></li>
+                                <li><a href="#"> 排隊等候單查詢 </a></li>
+                                <li><a href="#"> 轉介單查詢 </a></li>
+                                
+                            </ul>
+                           
+                        </li>
+                        <li class="block">
+                            <input type="radio" name="item" id="item13" />   
+                            <label for="item13"><c class='fas fa-circle' style="color:#FFFFFF"></c>　輔具管理<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#" > 所有輔具狀況</a></li>
+                                <li><a href="#" > 輔具保證金及租金設定</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item14" />   
+                            <label for="item14"><c class='fas fa-circle' style="color:#FFFFFF"></c>　輔具維修師選單<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#" > 待填輔具維修單列表</a></li>
+                                <li><a href="#" > 待填捐贈/回收單列表</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item15" />   
+                            <label for="item15"><c class='fas fa-circle' style="color:#FFFFFF"></c>　正職評估人員選單<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">待填評估單派案單</a></li>
+                                <li><a href="#">待核可評估單派案單</a></li>
+                                <li><a href="#">派案單查詢(已結案)</a></li>
+                                <li><a href="#">待核可輔具維修單</a></li>
+                                <li><a href="#">待核可輔具回收/捐贈單</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item16" />   
+                            <label for="item16"><c class='fas fa-circle' style="color:#FFFFFF"></c>　兼職評估人員選單<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">待填評估單派案單</a></li>
+                            </ul>
+                        </li>
+                
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item17" />   
+                            <label for="item17"><c class='fas fa-circle' style="color:#FFFFFF"></c>　權限控管<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">權限管理</a></li>
+                                <li><a href="#">新增中心管理</a></li>
+                                <li><a href="#">收據參數設定</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item18" />   
+                            <label for="item18"><c class='fas fa-circle' style="color:#FFFFFF"></c>　最高權限管理者<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">最高權限管理者</a></li>
+                            </ul>
+                        </li>
+                
+                        <li class="block">
+                            <input type="radio" name="item" id="item19" />   
+                            <label for="item19"><c class='fas fa-circle' style="color:#FFFFFF"></c>　報表功能<span><Q class="fa fa-chevron-down"></Q></span></label>
+                            <ul class="options">
+                                <li><a href="#">諮詢資料匯出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <script src="js/leftpanel_animation.js"></script>
+
+
+</body>

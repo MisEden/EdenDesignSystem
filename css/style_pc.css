@@ -125,4 +125,508 @@ header .edenUserData:hover {
   width: 64px;
   text-align: center;
 }
+
+.FixNav_2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.FixNav_2 ul li {
+  position: relative;
+}
+
+.FixNav_2 ul li p {
+  margin: 0;
+}
+
+.FixNav_2 ul li p a {
+  background: #555555;
+  color: #fff;
+  font-size: 16pt;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.FixNav_2 ul li p a:hover {
+  background-color: #999999;
+  color: #000000;
+  text-decoration: none;
+}
+
+.FixNav_2 ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.FixNav_1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.FixNav_1 ul li {
+  position: relative;
+  padding: 8px;
+}
+
+.FixNav_1 ul li div {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.FixNav_1 ul li p {
+  margin: 0;
+}
+
+.FixNav_1 ul li p a {
+  color: #000000;
+  font-size: 16pt;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.FixNav_1 ul li p a:hover {
+  background-color: #555555;
+  color: #000000;
+  text-decoration: none;
+}
+
+.FixNav_1 ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.FixNavWithHierarchy ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.FixNavWithHierarchy ul li label {
+  background: #555555;
+  /* fallback colour */
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  display: block;
+  padding: 14px;
+  width: 100%;
+  font-size: 16pt;
+}
+
+.FixNavWithHierarchy ul li input[type='radio'] {
+  display: none;
+}
+
+.FixNavWithHierarchy ul li i {
+  font-size: 16pt;
+  vertical-align: middle;
+  width: 20px;
+  display: inline-block;
+}
+
+.FixNavWithHierarchy ul li span {
+  display: inline;
+  float: right;
+  background: #555555;
+  font-size: 16px;
+  text-align: center;
+}
+
+.FixNavWithHierarchy ul li label:hover {
+  background: #999999;
+  /* fallback colour */
+}
+
+.FixNavWithHierarchy ul li label:hover span {
+  background: #999999;
+}
+
+.FixNavWithHierarchy ul li input[type='radio']:checked ~ label {
+  background: #999999;
+  /* fallback colour */
+}
+
+.FixNavWithHierarchy ul li input[type='radio']:checked ~ label span {
+  background: #999999;
+  /* fallback colour */
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-right: 5px;
+  text-align: center;
+}
+
+.FixNavWithHierarchy ul li input[type='radio']:checked ~ .options {
+  height: auto;
+  display: block;
+  min-height: 40px;
+  max-height: 400px;
+}
+
+.FixNavWithHierarchy ul ul {
+  background: #555555;
+  color: #FFFFFF;
+}
+
+.FixNavWithHierarchy ul ul li a {
+  display: block;
+  padding: 6px 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 60px;
+  font-size: 14pt;
+}
+
+.FixNavWithHierarchy ul ul li a:hover {
+  color: #FFFFFF;
+  background-color: #999999;
+  text-decoration: none;
+}
+
+.FixNavWithHierarchy ul ul li a span {
+  color: #FFFFFF;
+}
+
+.FixNavWithHierarchy .options {
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.NavBasWithHierarchy ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 8px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.NavBasWithHierarchy ul li label {
+  background: #555555;
+  /* fallback colour */
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  display: block;
+  width: 100%;
+  font-size: 16pt;
+  padding: 14px;
+}
+
+.NavBasWithHierarchy ul li input[type='radio'] {
+  display: none;
+}
+
+.NavBasWithHierarchy ul li i {
+  font-size: 16pt;
+  vertical-align: middle;
+  width: 20px;
+  display: inline-block;
+}
+
+.NavBasWithHierarchy ul li span {
+  display: inline;
+  float: right;
+  background: #555555;
+  font-size: 16px;
+  text-align: center;
+}
+
+.NavBasWithHierarchy ul li label:hover {
+  background: #999999;
+  /* fallback colour */
+}
+
+.NavBasWithHierarchy ul li label:hover span {
+  background: #999999;
+}
+
+.NavBasWithHierarchy ul li input[type='radio']:checked ~ label {
+  background: #999999;
+  /* fallback colour */
+}
+
+.NavBasWithHierarchy ul li input[type='radio']:checked ~ label span {
+  background: #999999;
+  /* fallback colour */
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-right: 5px;
+  text-align: center;
+}
+
+.NavBasWithHierarchy ul li input[type='radio']:checked ~ .options {
+  height: auto;
+  display: block;
+  min-height: 40px;
+  max-height: 400px;
+}
+
+.NavBasWithHierarchy ul ul {
+  background: #555555;
+  color: #FFFFFF;
+}
+
+.NavBasWithHierarchy ul ul li a {
+  display: block;
+  padding: 6px 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 60px;
+  font-size: 14pt;
+}
+
+.NavBasWithHierarchy ul ul li a:hover {
+  color: #FFFFFF;
+  background-color: #999999;
+  text-decoration: none;
+}
+
+.NavBasWithHierarchy ul ul li a span {
+  color: #FFFFFF;
+}
+
+.NavBasWithHierarchy .options {
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.divBlack {
+  width: 328px;
+  height: 910px;
+  background-color: #555555;
+  z-index: -1;
+  position: absolute;
+  top: 64px;
+  left: -328px;
+}
+
+.NavBas {
+  width: 64px;
+  background-color: #555555;
+  height: 910px;
+}
+
+.NavBas ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.NavBas ul li {
+  position: relative;
+  padding: 8px;
+}
+
+.NavBas ul li div {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.NavBas ul li p {
+  margin: 0;
+}
+
+.NavBas ul li p a {
+  color: #000000;
+  font-size: 16pt;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.NavBas ul li p a:hover {
+  background-color: #555555;
+  color: #000000;
+  text-decoration: none;
+}
+
+.NavBas ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.NavBas_Detail {
+  background-color: #555555;
+  height: 910px;
+}
+
+.NavBas_Detail ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.NavBas_Detail ul li {
+  position: relative;
+  padding: 8px;
+}
+
+.NavBas_Detail ul li p {
+  margin: 0;
+}
+
+.NavBas_Detail ul li p a {
+  color: #FFFFFF;
+  font-size: 16pt;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.NavBas_Detail ul li p a:hover {
+  background-color: #555555;
+  color: #000000;
+  text-decoration: none;
+}
+
+.NavBas_Detail ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.NavBasLR {
+  width: 64px;
+  background-color: #555555;
+  height: 910px;
+}
+
+.NavBasLR ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.NavBasLR ul li {
+  position: relative;
+}
+
+.NavBasLR ul li div {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.NavBasLR ul li p {
+  margin: 0;
+}
+
+.NavBasLR ul li p a {
+  color: #000000;
+  font-size: 16pt;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.NavBasLR ul li p a:hover {
+  background-color: #999999;
+  text-decoration: none;
+}
+
+.NavBasLR ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.NavBas_DetailLR {
+  background-color: #555555;
+  height: 910px;
+  position: absolute;
+  left: -320px;
+  top: 64px;
+  width: 320px;
+}
+
+.NavBas_DetailLR ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.NavBas_DetailLR ul li {
+  position: relative;
+  padding: 8px;
+}
+
+.NavBas_DetailLR ul li p {
+  margin: 0;
+}
+
+.NavBas_DetailLR ul li p a {
+  color: #FFFFFF;
+  font-size: 16pt;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.NavBas_DetailLR ul li p a:hover {
+  background-color: #555555;
+  color: #000000;
+  text-decoration: none;
+}
+
+.NavBas_DetailLR ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.hamburg {
+  display: block;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  background-color: #555555;
+  color: white;
+  text-align: center;
+}
+
+.hamburg table {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hamburg:hover {
+  text-decoration: none;
+  background: #999999;
+}
 /*# sourceMappingURL=style_pc.css.map */
