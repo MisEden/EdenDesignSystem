@@ -21,27 +21,6 @@
         rel="stylesheet" />
     <link href="css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
 
-    <!--Redio 可取消點選-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    </script>
-    <script type="text/javascript">
-        $(function(){
-            $('input:radio').click(function(){
-                var domName = $(this).attr('name');
-                var $radio = $(this);
-                if ($radio.data('waschecked') == true){
-                    $radio.prop('checked', false);
-                    $("input:radio[name='" + domName + "']").data('waschecked',false);
-                } else {
-                    $radio.prop('checked', true);
-                    $("input:radio[name='" + domName + "']").data('waschecked',false);
-                    $radio.data('waschecked', true);
-                }
-                
-            });
-        });
-    </script>
-
 </head>
 
 <body>
@@ -269,6 +248,10 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
     <script src="js/leftpanel_animation.js"></script>
+
+    
+  
+
 
 
 </body>

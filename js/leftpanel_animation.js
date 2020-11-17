@@ -105,14 +105,6 @@ $(document).ready(function () {
             $(".tablet").show();
         }
 
-        //$(".NavBasWithHierarchyPcStyle").hide();
-        //$(".NavBasWithHierarchyPhoneStyle").hide();
-        //$("i").show();
-        //$("j").hide();
-        //$("iphone").show();
-        //$("jphone").hide();
-
-
     });
 });
 
@@ -127,7 +119,6 @@ $("i").mousedown(function () {
 
 
     //NavBasWithHierarchy
-    //$(".NavBasWithHierarchyPcStyle").show('slow');
     $(".NavBasWithHierarchyPcStyle").animate({ left: "-5px" });
     $(".divBlack").animate({ left: "-5px" });
 
@@ -148,7 +139,6 @@ $("j").mousedown(function () {
     $("i").show();
 
     //NavBasWithHierarchy
-    //$(".NavBasWithHierarchyPcStyle").hide();
     $(".NavBasWithHierarchyPcStyle").animate({ left: "-328px" });
     $(".divBlack").animate({ left: "-325px" });
 
@@ -181,6 +171,18 @@ $("jphone").mousedown(function () {
     $(".NavBas_phone").hide();
 }
 );
-
-
+//目錄radio 的控制動作
+$('input:radio').click(function(){
+    var domName = $(this).attr('name');
+    var $radio = $(this);
+    if ($radio.data('waschecked') == true){
+        $radio.prop('checked', false);
+        $("input:radio[name='" + domName + "']").data('waschecked',false);
+    } else {
+        $radio.prop('checked', true);
+        $("input:radio[name='" + domName + "']").data('waschecked',false);
+        $radio.data('waschecked', true);
+    }
+    
+});
    
