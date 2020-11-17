@@ -273,10 +273,10 @@
     ul {
         list-style:none;
         margin:0; 
-        padding:0;
-        width:300px;
+      
+        width:240px;
         margin:0 auto;
-        
+
         li{
             label {
                 background: #555555; /* fallback colour */
@@ -284,7 +284,7 @@
                 text-shadow: 0 1px 1px #000;
                 display:block;
                 padding:14px;
-                width:100%; 
+                width:100%;
                 font-size: 14pt;
             }
     
@@ -334,6 +334,7 @@
             }
     
         }
+       
         ul {
             background:#555555;
             color:#FFFFFF; 
@@ -362,7 +363,8 @@
           }
         }
     }
-    
+
+
     .options {
         height: 0;
         display: block;
