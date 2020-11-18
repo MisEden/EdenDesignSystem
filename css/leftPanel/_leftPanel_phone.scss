@@ -274,8 +274,10 @@
         list-style:none;
         margin:0; 
       
-        width:240px;
+        //width:240px;
         margin:0 auto;
+
+        width:100%;
 
         li{
             label {
@@ -284,8 +286,11 @@
                 text-shadow: 0 1px 1px #000;
                 display:block;
                 padding:14px;
-                width:100%;
+                //width:100%;
                 font-size: 14pt;
+
+                padding-left: 120px;
+                padding-right: 120px;
             }
     
             input[type='radio'] {
@@ -297,6 +302,8 @@
                 vertical-align: middle;
                 width:20px;
                 display:inline-block;
+
+               
             }
     
             span {
@@ -347,6 +354,9 @@
                 text-decoration:none;
                 padding-left: 60px;
                 font-size: 12pt;
+                
+                padding-left: 160px;
+               
             }
     
             a:hover {
