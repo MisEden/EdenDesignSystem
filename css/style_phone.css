@@ -297,7 +297,7 @@ header .edenUserData:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -308,8 +308,9 @@ header .edenUserData:hover {
   text-shadow: 0 1px 1px #000;
   display: block;
   padding: 14px;
-  width: 100%;
   font-size: 14pt;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .FixNavWithHierarchy_phone ul li input[type='radio'] {
@@ -373,6 +374,7 @@ header .edenUserData:hover {
   text-decoration: none;
   padding-left: 60px;
   font-size: 12pt;
+  padding-left: 160px;
 }
 
 .FixNavWithHierarchy_phone ul ul li a:hover {
@@ -494,10 +496,10 @@ header .edenUserData:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 240px;
   margin: 0 auto;
   padding-top: 8px;
   padding-bottom: 8px;
+  width: 100%;
 }
 
 .NavBas_phone ul li {
@@ -513,13 +515,15 @@ header .edenUserData:hover {
   color: #FFFFFF;
   font-size: 12pt;
   display: block;
-  padding: 6px;
+  padding-left: 150px;
   text-decoration: none;
   font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .NavBas_phone ul li p a:hover {
-  background-color: #555555;
+  background-color: #999999;
   color: #000000;
   text-decoration: none;
 }

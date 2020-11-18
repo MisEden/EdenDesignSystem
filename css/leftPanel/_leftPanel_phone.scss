@@ -171,7 +171,7 @@
         list-style:none;
         margin:0; 
         padding:0;
-        width:300px;
+        width:100%;
         margin:0 auto;
         
         li{
@@ -181,8 +181,10 @@
                 text-shadow: 0 1px 1px #000;
                 display:block;
                 padding:14px;
-                width:100%; 
+                //width:100%; 
                 font-size: 14pt;
+                padding-left: 120px;
+                padding-right: 120px;
             }
     
             input[type='radio'] {
@@ -243,6 +245,7 @@
                 text-decoration:none;
                 padding-left: 60px;
                 font-size: 12pt;
+                padding-left: 160px;
             }
     
             a:hover {
@@ -390,12 +393,13 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        width: 240px;
         margin: 0 auto;
-        //text-align: center;
         padding-top: 8px;
         padding-bottom: 8px;
        
+        //width: 240px;
+        width: 100%;
+
         li {
             position: relative;
             padding: 8px;
@@ -414,15 +418,18 @@
             color: #FFFFFF;
             font-size: 12pt;
             display: block;
-            padding: 6px;
+            padding-left: 150px;
             text-decoration: none;
             font-weight: bold;
+            padding-top: 8px;
+            padding-bottom: 8px;
         }
 
         li p a:hover {
-            background-color: #555555;
+            background-color: #999999;
             color: #000000;
             text-decoration: none;
+            
         }
 
         li a[href="#foo"] {
