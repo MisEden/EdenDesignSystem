@@ -661,7 +661,7 @@ header .edenUserData:hover {
   background-color: #555555;
 }
 
-.edenNavFix_1 ul li > a {
+.edenNavFix_1 div:nth-child(1) ul li > a {
   font-size: 18px;
   color: black;
   font-weight: bold;
@@ -673,7 +673,7 @@ header .edenUserData:hover {
   border-radius: 5px;
 }
 
-.edenNavFix_1 ul li > a:hover {
+.edenNavFix_1 div:nth-child(1) ul li > a:hover {
   background-color: #797979;
 }
 
@@ -688,11 +688,11 @@ header .edenUserData:hover {
   padding: 0;
 }
 
-.edenNavFix_2 ul {
+.edenNavFix_2 div:nth-child(1) ul {
   width: 100%;
 }
 
-.edenNavFix_2 ul li > a {
+.edenNavFix_2 div:nth-child(1) ul li > a {
   font-size: 18px;
   color: white;
   font-weight: bold;
@@ -705,7 +705,7 @@ header .edenUserData:hover {
   padding: 20px 0;
 }
 
-.edenNavFix_2 ul a:hover {
+.edenNavFix_2 div:nth-child(1) ul a:hover {
   background-color: #797979;
 }
 
@@ -789,11 +789,11 @@ header .edenUserData:hover {
   padding: 0;
 }
 
-.edenNavBasHi_2 ul {
+.edenNavBasHi_2 div:nth-child(1) ul {
   width: 100%;
 }
 
-.edenNavBasHi_2 ul li > a {
+.edenNavBasHi_2 div:nth-child(1) ul li > a {
   font-size: 18px;
   color: white;
   font-weight: bold;
@@ -807,7 +807,7 @@ header .edenUserData:hover {
   padding: 20px 15px;
 }
 
-.edenNavBasHi_2 ul a:hover {
+.edenNavBasHi_2 div:nth-child(1) ul a:hover {
   background-color: #797979;
 }
 /*# sourceMappingURL=style_tablet.css.map */

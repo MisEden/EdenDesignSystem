@@ -18,23 +18,22 @@
     div:nth-child(1){
         background-color: #555555;
         text-align: center;
-    }
-
-    ul{
-        display: none;
-        li>a{
-            font-size: 18px;
-            color: black;
-            font-weight:bold;
-            text-decoration:none;//去除超連結底線樣式
-            display: block;//整個區塊都能點擊超連結
-            background-color: #ffffff;
-            margin:20px;
-            padding: 10px 0;
-            border-radius:5px;
-        }
-        li>a:hover{
-            background-color: #797979;
+        ul{
+            display: none;
+            li>a{
+                font-size: 18px;
+                color: black;
+                font-weight:bold;
+                text-decoration:none;//去除超連結底線樣式
+                display: block;//整個區塊都能點擊超連結
+                background-color: #ffffff;
+                margin:20px;
+                padding: 10px 0;
+                border-radius:5px;
+            }
+            li>a:hover{
+                background-color: #797979;
+            }
         }
     }
 }
@@ -47,21 +46,20 @@
         text-align: center;
         background-color: #555555;
         padding: 0;
-    }
-    
-    ul{
-        display: none;
-        li>a{
-            font-size: 18px;
-            color: white;
-            font-weight:bold;
-            text-decoration:none;//去除超連結底線樣式
-            display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
-            justify-content:space-around;
-            padding: 20px 0;
-        }
-        a:hover{
-            background-color: #797979;
+        ul{
+            display: none;
+            li>a{
+                font-size: 18px;
+                color: white;
+                font-weight:bold;
+                text-decoration:none;//去除超連結底線樣式
+                display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+                justify-content:space-around;
+                padding: 20px 0;
+            }
+            a:hover{
+                background-color: #797979;
+            }
         }
     }
 }
@@ -137,21 +135,20 @@
         text-align: center;
         background-color: #555555;
         padding: 0;
-    }
-    
-    ul{
-        display: none;
-        li>a{
-            font-size: 18px;
-            color: white;
-            font-weight:bold;
-            text-decoration:none;//去除超連結底線樣式
-            display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
-            justify-content:space-between;
-            padding: 20px 40px;
-        }
-        a:hover{
-            background-color: #797979;
+        ul{
+            display: none;
+            li>a{
+                font-size: 18px;
+                color: white;
+                font-weight:bold;
+                text-decoration:none;//去除超連結底線樣式
+                display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+                justify-content:space-between;
+                padding: 20px 40px;
+            }
+            a:hover{
+                background-color: #797979;
+            }
         }
     }
 }
