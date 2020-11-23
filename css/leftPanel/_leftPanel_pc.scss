@@ -1,544 +1,161 @@
-
-.FixNav_2 {
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-
-
-        li {
-            position: relative;
-        }
-
-        li p {
-            margin: 0;
-        }
-
-        li p a {
-            background: #555555;
-            color: #fff;
-            font-size: 16pt;
-            display: block;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        li p a:hover {
-            background-color: #999999;
-            color: #000000;
-            text-decoration: none;
-        }
-
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
-   
-     
-    }
-}
-
-.FixNav_1 {
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-
-
-        li {
-            position: relative;
-            padding: 8px;
-            div{
-                background-color: #FFFFFF;
-                border-radius: 5px;
-            }
-        }
-
-        li p {
-            margin: 0;
-        }
-
-        li p a {
-            //background: #FFFFFF;
-            color: #000000;
-            font-size: 16pt;
-            display: block;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        li p a:hover {
-            background-color: #555555;
-            color: #000000;
-            text-decoration: none;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
-    }
-}
-
-.FixNavWithHierarchy {
-    ul {
-        list-style:none;
-        margin:0; 
-        padding:0;
-        width:100%;
-        margin:0 auto;
-      
-
-        li{
-            label {
-                background: #555555; /* fallback colour */
-                color: #fff;
-                text-shadow: 0 1px 1px #000;
-                display:block;
-                padding:14px;
-                width:100%; 
-                font-size: 16pt;
-            }
-    
-            input[type='radio'] {
-                display: none;
-            }
-    
-            i {
-                font-size:16pt;
-                vertical-align: middle;
-                width:20px;
-                display:inline-block;
-            }
-    
-            span {
-                display:inline;
-                float:right;
-                background:#555555;
-                font-size:16px;
-                text-align: center;
-            }
-            label:hover {
-                background: #999999; /* fallback colour */
-            }
-    
-            label:hover span {
-                background:#999999;
-            }
-    
-    
-            input[type='radio']:checked ~ label {
-                background: #999999; /* fallback colour */
-            }
-    
-            input[type='radio']:checked ~ label span {
-                background: #999999; /* fallback colour */
-                transform: rotate(180deg);
-                padding-right: 5px;
-                text-align: center;
-            }
-    
-            input[type='radio']:checked ~ .options {
-                height: auto;
-                display:block;
-                min-height:40px;
-                max-height:400px;
-            }
-    
-        }
-        ul {
-            background:#555555;
-            color:#FFFFFF; 
-    
-          li{
-            a {
-                display:block;
-                padding:6px 12px;
-                color:#FFFFFF;
-                text-decoration:none;
-                padding-left: 60px;
-                font-size: 14pt;
-            }
-    
-            a:hover {
-                color:#FFFFFF;
-                background-color: #999999;
-                text-decoration:none;
-            }
-    
-            a span {
-                color:#FFFFFF;
-            
-            }
-    
-          }
-        }
-    }
-    
-    .options {
-        height: 0;
+//菜單中的下拉選單
+.edenlpHiInside{
+    a{
         display: block;
-        overflow: hidden;
-    }
-        
-    
-}
-
-.NavBasWithHierarchy {
-    ul {
-        list-style:none;
-        margin:0; 
-        padding-left:8px;
-        width:100%;
-        margin:0 auto;
-
-        li{
-            label {
-                background: #555555; /* fallback colour */
-                color: #fff;
-                text-shadow: 0 1px 1px #000;
-                display:block;
-                width:100%; 
-                font-size: 16pt;
-                padding:14px;
-            }
-    
-            input[type='radio'] {
-                display: none;
-            }
-    
-            i {
-                font-size:16pt;
-                vertical-align: middle;
-                width:20px;
-                display:inline-block;
-            }
-    
-            span {
-                display:inline;
-                float:right;
-                background:#555555;
-                font-size:16px;
-                text-align: center;
-            }
-            label:hover {
-                background: #999999; /* fallback colour */
-            }
-    
-            label:hover span {
-                background:#999999;
-            }
-    
-    
-            input[type='radio']:checked ~ label {
-                background: #999999; /* fallback colour */
-            }
-    
-            input[type='radio']:checked ~ label span {
-                background: #999999; /* fallback colour */
-                transform: rotate(180deg);
-                padding-right: 5px;
-                text-align: center;
-            }
-    
-            input[type='radio']:checked ~ .options {
-                height: auto;
-                display:block;
-                min-height:40px;
-                max-height:400px;
-            }
-    
-        }
-        ul {
-            background:#555555;
-            color:#FFFFFF; 
-    
-          li{
-            a {
-                display:block;
-                padding:6px 12px;
-                color:#FFFFFF;
-                text-decoration:none;
-                padding-left: 60px;
-                font-size: 14pt;
-            }
-    
-            a:hover {
-                color:#FFFFFF;
-                background-color: #999999;
-                text-decoration:none;
-            }
-    
-            a span {
-                color:#FFFFFF;
-            
-            }
-    
-          }
-        }
-    }
-    
-    .options {
-        height: 0;
-        display: block;
-        overflow: hidden;
-    } 
-}
-
-.divBlack{
-    width: 328px;
-    height:910px;
-    background-color: #555555; 
-    z-index:-1;
-    position:absolute;
-    top:64px;
-    left:-328px;
-}
-
-
-.NavBas {
-
-    width:64px;
-    background-color: #555555;
-    height:910px;
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        
+        font-size: 20px;
+        color: white;
+        font-weight:bold;
+        text-decoration:none;//去除超連結底線樣式
         text-align: center;
-
-
-        li {
-            position: relative;
-            padding: 8px;
-            div{
-                background-color: #FFFFFF;
-                border-radius: 5px;
-            }
-        }
-
-        li p {
-            margin: 0;
-        }
-
-        li p a {
-            //background: #FFFFFF;
-            color: #000000;
-            font-size: 16pt;
-            display: block;
-            padding-top: 15px;
-            padding-bottom: 15px;
-          
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        li p a:hover {
-            background-color: #555555;
-            color: #000000;
-            text-decoration: none;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
+        padding: 5px 0;
     }
 }
 
-.NavBas_Detail {
-    
+.edenNavFix_1{
 
-         background-color: #555555;
-         height:910px;
-       
-  
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        
-        li {
-            position: relative;
-            padding: 8px; 
-        }
-
-        li p {
-            margin: 0;
-        }
-
-        li p a {
-            //background: #FFFFFF;
-            color: #FFFFFF;
-            font-size: 16pt;
-            display: block;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        li p a:hover {
-            background-color: #555555;
-            color: #000000;
-            text-decoration: none;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
-    }
-}
-
-
-.NavBasLR {
-
-    width:64px;
-    background-color: #555555;
-    height:910px;
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    height: 93%;
+    div:nth-child(1){
         text-align: center;
+        height: 100%;
+        background-color: #555555;
+    }
+    
+    ul{
+        li>a{
+            font-size: 18px;
+            color: black;
+            font-weight:bold;
+            text-decoration:none;//去除超連結底線樣式
+            display: block;//整個區塊都能點擊超連結
+            background-color: #ffffff;
+            margin:20px 0;
+            padding: 10px 0;
+            border-radius:5px;
+        }
+        li>a:hover{
+            background-color: #797979;
+        }
+    }
 
+}
 
-        li {
-            position: relative;
-           
-            div{
-                background-color: #FFFFFF;
-                border-radius: 5px;
-            }
+.edenNavFix_2{
+
+    height: 93%;
+    div:nth-child(1){
+        text-align: center;
+        height: 100%;
+        background-color: #555555;
+        padding: 0;
+    }
+    
+    ul{
+        width: 100%;
+        li>a{
+            font-size: 24px;
+            color: white;
+            font-weight:bold;
+            text-decoration:none;//去除超連結底線樣式
+            display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+            justify-content:space-around;
+            padding: 20px 0;
+
+        }
+        a:hover{
+            background-color: #797979;
         }
 
-        li p {
-            margin: 0;
-        }
-
-        li p a {
-            //background: #FFFFFF;
-            color: #000000;
-            font-size: 16pt;
-            display: block;
-            padding-top: 15px;
-            padding-bottom: 15px;
-          
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        li p a:hover {
-            background-color: #999999;
-            text-decoration: none;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
-
-       
     }
 }
 
-.NavBas_DetailLR {
-    
-
-    background-color: #555555;
-    height:910px;
+.edenNavBas{
     position: absolute;
-    left:-320px;
-    top:64px;
-    width:320px;
-    ul {
-        list-style: none;
-        margin: 0;
+    padding: 0;
+    height: 93%;
+    top: 64px;
+    ul{
+        height: 100%;
+        background-color: #555555;
+        padding: 0;
+        li{
+            
+            a{
+                font-size: 24px;
+                color: white;
+                font-weight:bold;
+                text-decoration:none;//去除超連結底線樣式
+                display: block;//整個區塊都能點擊超連結
+                padding: 20px 18px;
+                span{
+                    display: none;
+                }
+            }
+            a:hover{
+                background-color: #797979;
+            }
+        }
+
+    }
+}
+
+.edenNavBasHi_1{
+    position: absolute;
+    padding: 0;
+    height: 93%;
+    top: 64px;
+    ul{
+        height: 100%;
+        background-color: #555555;
         padding: 0;
         
-        li {
-            position: relative;
-            padding: 8px; 
-        }
+        li{
+            display: none;
+            .edenlpHiA{
+                font-size: 24px;
+                color: white;
+                font-weight:bold;
+                text-decoration:none;//去除超連結底線樣式
+                display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+                justify-content:space-between;
+                padding: 20px 18px;
 
-        li p {
-            margin: 0;
-        }
+                span{
+                    margin: 0 10px;
+                }
+            }
+            a:hover{
+                background-color: #797979;
+            }
 
-        li p a {
-            //background: #FFFFFF;
-            color: #FFFFFF;
-            font-size: 16pt;
-            display: block;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            text-decoration: none;
-            font-weight: bold;
         }
-
-        li p a:hover {
-            background-color: #555555;
-            color: #000000;
-            text-decoration: none;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
     }
 }
 
+.edenNavBasHi_2{
 
-.hamburg {
-    display: block;
-    text-decoration: none;
-    width: 64px;
-    height: 64px;
-    overflow: hidden;
-    background-color: #555555;
-    color: white;
-    text-align: center;
-
-    table {
-        width: 64px;
-        height: 64px;
+    height: 93%;
+    div:nth-child(1){
         text-align: center;
-        vertical-align: middle;
+        height: 100%;
+        background-color: #555555;
+        padding: 0;
+    }
+    
+    ul{
+        width: 100%;
+        li>a{
+            font-size: 24px;
+            color: white;
+            font-weight:bold;
+            text-decoration:none;//去除超連結底線樣式
+            display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+            justify-content:space-between;
+            padding: 20px 10px;
+
+        }
+        a:hover{
+            background-color: #797979;
+        }
+
     }
 }
-
-.hamburg:hover {
-    text-decoration: none;
-    background: #999999;
-}
-
-
-

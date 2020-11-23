@@ -6,6 +6,10 @@ header {
   font-weight: bold;
 }
 
+header .titleCenter {
+  text-align: center;
+}
+
 header .hamburger {
   display: none;
 }
@@ -21,16 +25,16 @@ header h1 {
   line-height: 56px;
 }
 
+header h1 span {
+  margin-left: 10px;
+}
+
 header .edenMenu {
   text-align: center;
   z-index: 9998;
 }
 
-header .edenh1 {
-  background-color: #f46c23;
-}
-
-header .edenh2:hover {
+header .edenMenu:hover {
   background-color: #717171;
 }
 
@@ -91,8 +95,7 @@ header .edenUserData:hover {
   background-color: #757575;
 }
 
-.edenHeader2 .hamburger {
-  display: inline;
+.edenHeader2 div:nth-child(1) a {
   text-decoration: none;
 }
 
@@ -636,5 +639,175 @@ header .edenUserData:hover {
 .hamburg:hover {
   text-decoration: none;
   background: #999999;
+}
+
+.edenlpHiInside a {
+  display: block;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.edenNavFix_1 {
+  height: 93.8%;
+}
+
+.edenNavFix_1 div:nth-child(1) {
+  text-align: center;
+  height: 100%;
+  background-color: #555555;
+}
+
+.edenNavFix_1 ul li > a {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.edenNavFix_1 ul li > a:hover {
+  background-color: #797979;
+}
+
+.edenNavFix_2 {
+  height: 93.8%;
+}
+
+.edenNavFix_2 div:nth-child(1) {
+  text-align: center;
+  height: 100%;
+  background-color: #555555;
+  padding: 0;
+}
+
+.edenNavFix_2 ul {
+  width: 100%;
+}
+
+.edenNavFix_2 ul li > a {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+}
+
+.edenNavFix_2 ul a:hover {
+  background-color: #797979;
+}
+
+.edenNavBas {
+  position: absolute;
+  padding: 0;
+  height: 93.8%;
+  top: 56px;
+}
+
+.edenNavBas ul {
+  height: 100%;
+  background-color: #555555;
+  padding: 0;
+}
+
+.edenNavBas ul li a {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 16px 16px;
+}
+
+.edenNavBas ul li a span {
+  display: none;
+}
+
+.edenNavBas ul li a:hover {
+  background-color: #797979;
+}
+
+.edenNavBasHi_1 {
+  position: absolute;
+  padding: 0;
+  height: 93.8%;
+  top: 56px;
+}
+
+.edenNavBasHi_1 ul {
+  height: 100%;
+  background-color: #555555;
+  padding: 0;
+}
+
+.edenNavBasHi_1 ul li {
+  display: none;
+}
+
+.edenNavBasHi_1 ul li .edenlpHiA {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 18px;
+}
+
+.edenNavBasHi_1 ul li .edenlpHiA span {
+  margin: 0 10px;
+}
+
+.edenNavBasHi_1 ul li a:hover {
+  background-color: #797979;
+}
+
+.edenNavBasHi_2 {
+  height: 93.8%;
+}
+
+.edenNavBasHi_2 div:nth-child(1) {
+  text-align: center;
+  height: 100%;
+  background-color: #555555;
+  padding: 0;
+}
+
+.edenNavBasHi_2 ul {
+  width: 100%;
+}
+
+.edenNavBasHi_2 ul li > a {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.edenNavBasHi_2 ul a:hover {
+  background-color: #797979;
 }
 /*# sourceMappingURL=style_tablet.css.map */

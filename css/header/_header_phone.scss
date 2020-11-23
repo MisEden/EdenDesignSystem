@@ -19,18 +19,18 @@ header {
         font-size: 24px;
         height: 48px;
         line-height: 48px;
+        span{
+            margin-left: 8px;
+        }
     }
 
     .edenMenu {
         text-align: center;
         z-index: 9998;
+        display: none;
     }
 
-    .edenh1 {
-        background-color: #f46c23;
-    }
-
-    .edenh2:hover {
+    .edenMenu:hover {
         background-color: #717171;
     }
 
@@ -92,11 +92,9 @@ header {
 }
 
 .edenHeader2 {
-    .hamburger {
-        display: inline;
+    div:nth-child(1) a{
         text-decoration: none;
     }
-
     .edenSurchBar {
         position: absolute;
         top: 0px;

@@ -8,10 +8,12 @@ $(document).ready(function(){
     $(window).resize(function() {//判斷視窗大小 顯示菜單和隱藏菜單
         var wdth=$(window).width();
         if(wdth>=768){
-            $(".edenMenu").show().stop();
+            $(".edenMenu").show();
         }
         if(wdth<768){
-            $(".edenMenu").hide().stop();
+            $(".edenMenu").hide();
+            $(".hamburger").addClass("fa-bars");
+            $(".hamburger").removeClass("fa-close");
         }
     });
 });
@@ -69,14 +71,13 @@ function edenSurchOpenClose(){
 
 //使用者訊息動畫
 function edenUserAnimate(){
-    $(".sub").animate({
-        height:'toggle'
-    });
+    $(".sub").slideToggle();
 }
 
 //菜單動畫
 function edenMenuAnimate(){
-    $(".edenMenu").animate({
-        height:'toggle',
-    });
+
+    $(".edenMenu").slideToggle();
+    $(".hamburger").toggleClass("fa-bars");
+    $(".hamburger").toggleClass("fa-close");
 }

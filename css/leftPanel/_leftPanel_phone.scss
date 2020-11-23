@@ -1,503 +1,157 @@
-
-.FixNav_2phone {
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-
-
-        li {
-            position: relative;
-        }
-
-        li p {
-            margin: 0;
-        }
-
-        li p a {
-            background: #555555;
-            color: #fff;
-            font-size: 12pt;
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        li p a:hover {
-            background-color: #555555;
-            color: #000000;
-            text-decoration: none;
-        }
-
-        li a[href="#foo"] {
-            height: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        li a[href="#foo"]::before {
-            border: solid #ffffff;
-            border-width: 0 2px 2px 0;
-            content: "";
-            display: inline-block;
-            padding: 4px;
-            position: absolute;
-            right: 10px;
-            top: 27px;
-            transition: transform 0.2s ease;
-            transform: rotate(-45deg);
-            z-index: 1;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
-        li ul li a {
-            background: #A28f8f;
-            display: block;
-            text-decoration: none;
-            padding: 10px;
-            color: #ffffff;
-            height: 20px;
-        }
-
-        li ul li a:hover {
-            background: #938181;
-        }
-
-        ul:target {
-            max-height: 800px;
-            transition: max-height 2s ease-out;
-        }
-    }
-}
-
-.FixNav_1phone {
-    ul {
-        list-style: none;
-        margin: 0;
-        //padding: 0;
-        width: 328px;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 8px;
-        padding-bottom: 8px;
-       
-        li {
-            position: relative;
-            padding: 8px;
-            div{
-                background-color: #FFFFFF;
-                border-radius: 5px;
-            }
-        }
-
-        li div p {
-            margin: 0;
-        }
-
-        li div p a {
-            //background: #FFFFFF;
-            color: #000000;
-            font-size: 12pt;
-            display: block;
-            padding: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        li p a:hover {
-            background-color: #555555;
-            color: #000000;
-            text-decoration: none;
-        }
-
-        li a[href="#foo"] {
-            height: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        li a[href="#foo"]::before {
-            border: solid #ffffff;
-            border-width: 0 2px 2px 0;
-            content: "";
-            display: inline-block;
-            padding: 4px;
-            position: absolute;
-            right: 10px;
-            top: 27px;
-            transition: transform 0.2s ease;
-            transform: rotate(-45deg);
-            z-index: 1;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
-        li ul li a {
-            background: #555555;
-            display: block;
-            text-decoration: none;
-            padding: 8px;
-            color: #ffffff;
-            height: 16px;
-        }
-
-        li ul li a:hover {
-            background: #555555;
-        }
-
-        ul:target {
-            max-height: 800px;
-            transition: max-height 2s ease-out;
-        }
-    }
-}
-
-.FixNavWithHierarchy_phone {
-    ul {
-        list-style:none;
-        margin:0; 
-        padding:0;
-        width:100%;
-        margin:0 auto;
-        
-        li{
-            label {
-                background: #555555; /* fallback colour */
-                color: #fff;
-                text-shadow: 0 1px 1px #000;
-                display:block;
-                padding:14px;
-                //width:100%; 
-                font-size: 14pt;
-                padding-left: 120px;
-                padding-right: 120px;
-            }
-    
-            input[type='radio'] {
-                display: none;
-            }
-    
-            i {
-                font-size:16pt;
-                vertical-align: middle;
-                width:20px;
-                display:inline-block;
-            }
-    
-            span {
-                display:inline;
-                float:right;
-                background:#555555;
-                font-size:14pt;
-                text-align: center;
-            }
-            label:hover {
-                background: #999999; /* fallback colour */
-            }
-    
-            label:hover span {
-                background:#999999;
-            }
-    
-    
-            input[type='radio']:checked ~ label {
-                background: #999999; /* fallback colour */
-            }
-    
-            input[type='radio']:checked ~ label span {
-                background: #999999; /* fallback colour */
-                transform: rotate(180deg);
-                padding-right: 5px;
-                text-align: center;
-            }
-    
-            input[type='radio']:checked ~ .options {
-                height: auto;
-                display:block;
-                min-height:40px;
-                max-height:400px;
-            }
-    
-        }
-        ul {
-            background:#555555;
-            color:#FFFFFF; 
-    
-          li{
-            a {
-                display:block;
-                padding:6px 12px;
-                color:#FFFFFF;
-                text-decoration:none;
-                padding-left: 60px;
-                font-size: 12pt;
-                padding-left: 160px;
-            }
-    
-            a:hover {
-                color:#FFFFFF;
-                background-color: #999999;
-                text-decoration:none;
-            }
-    
-            a span {
-                color:#FFFFFF;
-            
-            }
-    
-          }
-        }
-    }
-    
-    .options {
-        height: 0;
+//菜單中的下拉選單
+.edenlpHiInside{
+    a{
         display: block;
-        overflow: hidden;
+        font-size: 16px;
+        color: white;
+        font-weight:bold;
+        text-decoration:none;//去除超連結底線樣式
+        text-align: center;
+        padding: 5px 0;
     }
-        
-    
 }
 
-.NavBasWithHierarchy {
-    ul {
-        list-style:none;
-        margin:0; 
-      
-        //width:240px;
-        margin:0 auto;
+.edenNavFix_1{
 
-        width:100%;
+    padding: 0;
+    height: 0;
+    div:nth-child(1){
+        background-color: #555555;
+        text-align: center;
+    }
 
-        li{
-            label {
-                background: #555555; /* fallback colour */
-                color: #fff;
-                text-shadow: 0 1px 1px #000;
-                display:block;
-                padding:14px;
-                //width:100%;
-                font-size: 14pt;
-
-                padding-left: 120px;
-                padding-right: 120px;
-            }
-    
-            input[type='radio'] {
-                display: none;
-            }
-    
-            i {
-                font-size:16pt;
-                vertical-align: middle;
-                width:20px;
-                display:inline-block;
-
-               
-            }
-    
-            span {
-                display:inline;
-                float:right;
-                background:#555555;
-                font-size:14pt;
-                text-align: center;
-            }
-            label:hover {
-                background: #999999; /* fallback colour */
-            }
-    
-            label:hover span {
-                background:#999999;
-            }
-    
-    
-            input[type='radio']:checked ~ label {
-                background: #999999; /* fallback colour */
-            }
-    
-            input[type='radio']:checked ~ label span {
-                background: #999999; /* fallback colour */
-                transform: rotate(180deg);
-                padding-right: 5px;
-                text-align: center;
-            }
-    
-            input[type='radio']:checked ~ .options {
-                height: auto;
-                display:block;
-                min-height:40px;
-                max-height:400px;
-            }
-    
+    ul{
+        display: none;
+        li>a{
+            font-size: 18px;
+            color: black;
+            font-weight:bold;
+            text-decoration:none;//去除超連結底線樣式
+            display: block;//整個區塊都能點擊超連結
+            background-color: #ffffff;
+            margin:20px;
+            padding: 10px 0;
+            border-radius:5px;
         }
-       
-        ul {
-            background:#555555;
-            color:#FFFFFF; 
+        li>a:hover{
+            background-color: #797979;
+        }
+    }
+}
+
+.edenNavFix_2{
+
+    padding: 0;
+    height: 0;
+    div:nth-child(1){
+        text-align: center;
+        background-color: #555555;
+        padding: 0;
+    }
     
-          li{
-            a {
-                display:block;
-                padding:6px 12px;
-                color:#FFFFFF;
-                text-decoration:none;
-                padding-left: 60px;
-                font-size: 12pt;
+    ul{
+        display: none;
+        li>a{
+            font-size: 18px;
+            color: white;
+            font-weight:bold;
+            text-decoration:none;//去除超連結底線樣式
+            display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+            justify-content:space-around;
+            padding: 20px 0;
+        }
+        a:hover{
+            background-color: #797979;
+        }
+    }
+}
+
+.edenNavBas{
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    top: 48px;
+    ul{
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        background-color: #555555;
+        padding: 0;
+        li{
+            
+            a{
+                font-size: 20px;
+                color: white;
+                font-weight:bold;
+                text-decoration:none;//去除超連結底線樣式
+                display: block;//整個區塊都能點擊超連結
+                padding: 16px 16px;
                 
-                padding-left: 160px;
-               
             }
-    
-            a:hover {
-                color:#FFFFFF;
-                background-color: #999999;
-                text-decoration:none;
+            a:hover{
+                background-color: #797979;
             }
-    
-            a span {
-                color:#FFFFFF;
-            
-            }
-    
-          }
         }
     }
-
-
-    .options {
-        height: 0;
-        display: block;
-        overflow: hidden;
-    }
-        
-    
 }
 
 
-.NavBas_phone {
-  ul {
-        list-style: none;
-        margin: 0;
+.edenNavBasHi_1{
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    top: 48px;
+    ul{
+        height: 100%;
+        background-color: #555555;
         padding: 0;
-        margin: 0 auto;
-        padding-top: 8px;
-        padding-bottom: 8px;
-       
-        //width: 240px;
-        width: 100%;
+        display: none;
+        overflow: hidden;
+        li{
+            .edenlpHiA{
+                font-size: 20px;
+                color: white;
+                font-weight:bold;
+                text-decoration:none;//去除超連結底線樣式
+                display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+                justify-content:space-around;
+                padding: 20px 18px;
 
-        li {
-            position: relative;
-            padding: 8px;
-            //div{
-            //    background-color: #FFFFFF;
-            //    border-radius: 5px;
-            //}
-        }
-
-        li div p {
-            margin: 0;
-        }
-
-        li div p a {
-            //background: #FFFFFF;
-            color: #FFFFFF;
-            font-size: 12pt;
-            display: block;
-            padding-left: 150px;
-            text-decoration: none;
-            font-weight: bold;
-            padding-top: 8px;
-            padding-bottom: 8px;
-        }
-
-        li p a:hover {
-            background-color: #999999;
-            color: #000000;
-            text-decoration: none;
+                span{
+                    margin: 0 10px;
+                }
+            }
+            a:hover{
+                background-color: #797979;
+            }
             
         }
-
-        li a[href="#foo"] {
-            height: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        li a[href="#foo"]::before {
-            border: solid #ffffff;
-            border-width: 0 2px 2px 0;
-            content: "";
-            display: inline-block;
-            padding: 4px;
-            position: absolute;
-            right: 10px;
-            top: 27px;
-            transition: transform 0.2s ease;
-            transform: rotate(-45deg);
-            z-index: 1;
-        }
-
-        li ul {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s ease-out;
-        }
-
-        li ul li a {
-            background: #555555;
-            display: block;
-            text-decoration: none;
-            padding: 8px;
-            color: #ffffff;
-            height: 16px;
-        }
-
-        li ul li a:hover {
-            background: #555555;
-        }
-
-        ul:target {
-            max-height: 800px;
-            transition: max-height 2s ease-out;
-        }
     }
 }
 
-.hamburg {
-    display: block;
-    text-decoration: none;
-    width: 48px;
-    height: 48px;
-    overflow: hidden;
-    background-color: #555555;
-    color: white;
-    text-align: center;
+.edenNavBasHi_2{
 
-    table {
-        width: 48px;
-        height: 48px;
+    padding: 0;
+    height: 0;
+    div:nth-child(1){
         text-align: center;
-        vertical-align: middle;
+        background-color: #555555;
+        padding: 0;
     }
-}
-
-.hamburg:hover {
-    text-decoration: none;
-    background: #999999;
+    
+    ul{
+        display: none;
+        li>a{
+            font-size: 18px;
+            color: white;
+            font-weight:bold;
+            text-decoration:none;//去除超連結底線樣式
+            display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
+            justify-content:space-between;
+            padding: 20px 40px;
+        }
+        a:hover{
+            background-color: #797979;
+        }
+    }
 }

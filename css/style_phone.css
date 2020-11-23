@@ -21,16 +21,17 @@ header h1 {
   line-height: 48px;
 }
 
+header h1 span {
+  margin-left: 8px;
+}
+
 header .edenMenu {
   text-align: center;
   z-index: 9998;
+  display: none;
 }
 
-header .edenh1 {
-  background-color: #f46c23;
-}
-
-header .edenh2:hover {
+header .edenMenu:hover {
   background-color: #717171;
 }
 
@@ -87,8 +88,7 @@ header .edenUserData:hover {
   background-color: #757575;
 }
 
-.edenHeader2 .hamburger {
-  display: inline;
+.edenHeader2 div:nth-child(1) a {
   text-decoration: none;
 }
 
@@ -600,5 +600,174 @@ header .edenUserData:hover {
 .hamburg:hover {
   text-decoration: none;
   background: #999999;
+}
+
+.edenlpHiInside a {
+  display: block;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.edenNavFix_1 {
+  padding: 0;
+  height: 0;
+}
+
+.edenNavFix_1 div:nth-child(1) {
+  background-color: #555555;
+  text-align: center;
+}
+
+.edenNavFix_1 ul {
+  display: none;
+}
+
+.edenNavFix_1 ul li > a {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.edenNavFix_1 ul li > a:hover {
+  background-color: #797979;
+}
+
+.edenNavFix_2 {
+  padding: 0;
+  height: 0;
+}
+
+.edenNavFix_2 div:nth-child(1) {
+  text-align: center;
+  background-color: #555555;
+  padding: 0;
+}
+
+.edenNavFix_2 ul {
+  display: none;
+}
+
+.edenNavFix_2 ul li > a {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+}
+
+.edenNavFix_2 ul a:hover {
+  background-color: #797979;
+}
+
+.edenNavBas {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  top: 48px;
+}
+
+.edenNavBas ul {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #555555;
+  padding: 0;
+}
+
+.edenNavBas ul li a {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 16px 16px;
+}
+
+.edenNavBas ul li a:hover {
+  background-color: #797979;
+}
+
+.edenNavBasHi_1 {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  top: 48px;
+}
+
+.edenNavBasHi_1 ul {
+  height: 100%;
+  background-color: #555555;
+  padding: 0;
+  display: none;
+  overflow: hidden;
+}
+
+.edenNavBasHi_1 ul li .edenlpHiA {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 18px;
+}
+
+.edenNavBasHi_1 ul li .edenlpHiA span {
+  margin: 0 10px;
+}
+
+.edenNavBasHi_1 ul li a:hover {
+  background-color: #797979;
+}
+
+.edenNavBasHi_2 {
+  padding: 0;
+  height: 0;
+}
+
+.edenNavBasHi_2 div:nth-child(1) {
+  text-align: center;
+  background-color: #555555;
+  padding: 0;
+}
+
+.edenNavBasHi_2 ul {
+  display: none;
+}
+
+.edenNavBasHi_2 ul li > a {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.edenNavBasHi_2 ul a:hover {
+  background-color: #797979;
 }
 /*# sourceMappingURL=style_phone.css.map */

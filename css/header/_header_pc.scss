@@ -6,6 +6,9 @@ header {
     font-weight: bold;
     z-index: 100;
 
+    .titleCenter{
+        text-align: center;
+    }
     .hamburger {
         display: none;
     }
@@ -19,6 +22,9 @@ header {
         font-size: 32px;
         height: 68px;
         line-height: 64px;
+        span{
+            margin-left: 12px;
+        }
     }
 
     .edenMenu {
@@ -26,11 +32,7 @@ header {
         z-index: 9998;
     }
 
-    .edenh1 {
-        background-color: #f46c23;
-    }
-
-    .edenh2:hover {
+    .edenMenu:hover {
         background-color: #717171;
     }
 
@@ -92,8 +94,8 @@ header {
 }
 
 .edenHeader2 {
-    .hamburger {
-        display: inline;
+
+    div:nth-child(1) a{
         text-decoration: none;
     }
 

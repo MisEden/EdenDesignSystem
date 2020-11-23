@@ -1,3 +1,7 @@
+.tabVerSub70{
+    width: 70%;
+}
+
 .edenTabsV1{
     display: flex;
     .edenTabsV1Left{
@@ -14,16 +18,9 @@
         }
         .tab1{
             background-color: #f2f2f2;
-            height: 100px;
-            padding: 20px;
-            color: #797979;
-            h3{
-                margin:0.2em 0;
-                font-size: 1.5em;
-                font-weight:bold;
-            }
+            color: black;
         }
-        .tab2{
+        a{
             background-color: #4d4d4d;
             height: 100px;
             padding: 20px;
@@ -34,14 +31,11 @@
                 font-weight:bold;
             }
         }
-        .tab2:hover{
+        a:hover{
             background-color: #797979;
         }
     }
-    .edenTabsV1Right{
-        width: 70%;
-        background-color: #f2f2f2;
-    }
+
 }
 
 .edenTabsV2{
@@ -73,17 +67,9 @@
         }
         .tab1{
             background-color: white;
-            height: 100px;
-            margin: 15px;
-            padding: 15px;
             color: #797979;
-            h3{
-                margin:0.2em 0;
-                font-size: 1.5em;
-                font-weight:bold;
-            }
         }
-        .tab2{
+        a{
             height: 100px;
             margin: 15px;
             padding: 15px;
@@ -93,13 +79,11 @@
                 font-weight:bold;
             }
         }
-        .tab2:hover{
+        a:hover{
             border: black solid 2px;
         }
     }
-    .edenTabsV2Right{
-        width: 70%;
-    }
+
 }
 
 .edenTabsV3{

@@ -3,8 +3,9 @@
 var total = $(".v3LTab1").length+$(".v3LTab2").length;
 var mole = 1;
 
+    
 $(document).ready(function(){
-
+    
     //tab版 通用切換頁面功能除了v3
     $("#edenTabs a").click(showEdenTabsPage);
 
@@ -19,12 +20,19 @@ $(document).ready(function(){
 
 //tab版 通用切換頁面功能 除了v3
 function showEdenTabsPage(){
+
+    var tops = $(document).scrollTop();
+
     var value=$(this).attr("href");//#1
     console.log(value);
-    $("#edenTabsSub>div").hide();//隱藏所有頁面
+    $(".edenTabsSub>div").hide();//隱藏所有頁面
     $(value).show();//顯示不同頁面
-    $("#edenTabs .tab1").removeClass("tab1").addClass("tab2");
-    $(this).removeClass("tab2").addClass("tab1");
+    $("#edenTabs .tab1").removeClass("tab1");
+    $(this).addClass("tab1");
+    $(document).ready(function(){
+        $(document).scrollTop(tops);
+    }).stop();
+
 }
 
 

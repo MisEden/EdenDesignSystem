@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -8,7 +9,8 @@
     <meta http-equiv="author" content="HCY" />
     <title>Document</title>
     <!--bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--圖示-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--伊甸套版-->
@@ -19,19 +21,18 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="height: 100%;">
         <header class="row edenHeader2">
-            <div class="col-12">
+            <div class="col-md-3 col-xl-2 titleCenter">
                 <h1>
-                    <a href="#" class="fa fa-bars hamburger2"></a>
+                    <a href="#" class="fa fa-bars hamburger"></a>
                     <span>Header Bas</span>
                 </h1>
             </div>
-
             <div class="edenSurchBar">
-                <form action="" class="" >
+                <form action="" class="">
                     <a href="#"><i id="edenSurchSubmit" class="fa fa-search"></i></a>
-                    <input type="text" id="edenSearch" >
+                    <input type="text" id="edenSearch">
                     <a href="#"><i id="edenSurchOpenClose" class="fa fa-search"></i></a>
                 </form>
             </div>
@@ -40,13 +41,39 @@
                 <ul class="sub">
                     <li><a href="#">個人資料</a></li>
                     <li><a href="#">修改密碼</a></li>
-                    <li><hr></li>
+                    <li>
+                        <hr>
+                    </li>
                     <li><a href="#">登出</a></li>
                 </ul>
             </div>
         </header>
+        <div class="row edenNavFix_1">
+            <div class="col-md-3 col-xl-2">
+                <ul class="edenMenu">
+                    <li>
+                        <a href="#" class="edenlp">諮詢服務</a>
+                    </li>
+                    <li>
+                        <a href="#">資料查詢</a>
+                    </li>
+                    <li>
+                        <a href="#">輔具管理</a>
+                    </li>
+                    <li>
+                        <a href="#">輔具管理</a>
+                    </li>
+                    <li>
+                        <a href="#">輔具管理</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-xl-10">
+                我是內頁
+            </div>
+        </div>
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">

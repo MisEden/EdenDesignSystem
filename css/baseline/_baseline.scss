@@ -15,6 +15,13 @@ body {
     font-family: 微軟正黑體,ChunkFiveRegular, Times New Roman, Georgia;
 }
 
+//高改為滿版
+html, body {
+    height: 100%;    //body預設高度0    height假設300px
+    margin: 0px;
+    padding: 0px;
+}
+
 /*
 所有圖片的預設樣式
 自動放大到與div相同大小
