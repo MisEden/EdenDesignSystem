@@ -112,8 +112,8 @@
                 font-weight:bold;
                 text-decoration:none;//去除超連結底線樣式
                 display: flex;//整個區塊都能點擊超連結 並且做成彈性盒子 讓裡面進行排列
-                justify-content:space-around;
-                padding: 20px 18px;
+                justify-content:space-between;
+                padding: 20px 40px;
 
                 span{
                     margin: 0 10px;

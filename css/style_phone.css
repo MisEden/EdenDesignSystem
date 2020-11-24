@@ -725,9 +725,10 @@ header .edenUserData:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
 }
 
 .edenNavBasHi_1 ul li .edenlpHiA span {
