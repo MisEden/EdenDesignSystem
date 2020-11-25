@@ -810,4 +810,30 @@ header .edenUserData:hover {
 .edenNavBasHi_2 div:nth-child(1) ul a:hover {
   background-color: #797979;
 }
+
+.rp_ContentDetail {
+  margin-top: 50px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.rp_ContentDetail div {
+  width: 100%;
+  background-color: #d7d7d7;
+  padding: 20px 0;
+  border: 1px solid black;
+}
+
+.rp_ContentDetail ul li {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.rp_ContentDetail ul li:hover {
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=style_tablet.css.map */
