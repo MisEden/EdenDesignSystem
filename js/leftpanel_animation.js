@@ -1,188 +1,64 @@
+$(document).ready(function(){
+    $(".hb_leftPM").click(leftPanel);//點擊漢堡圖
+    $(".hb_leftPMHi").click(leftPanelHi);//點擊漢堡圖
 
-//NavBas
-$(".PC").hide();
-$(".tablet").hide();
-$(".Phone").hide();
-$(".NavBas_phone").hide();
-//$(".NavBasWithHierarchyPcStyle").hide();
-$(".NavBasWithHierarchyPhoneStyle").hide();
+    $(".edenlpHiA").click(leftPanelHiInside);
 
-//$(".NasBas").hide();
-//$(".NasBas_Detail").hide();
+    $(window).resize(function() {//判斷視窗大小 顯示菜單和隱藏菜單
 
-$(".FixNavWithHierarchy_phone").hide();
+        $(".hb_leftPM").addClass("fa-bars");
+        $(".hb_leftPM").removeClass("fa-close");
+        $(".hb_leftPMHi").addClass("fa-bars");
+        $(".hb_leftPMHi").removeClass("fa-close");
+        
+        var wdth=$(window).width();
+        if(wdth>=768){
+            $(".leftPanel span").hide();
+            $(".leftPanel").show();
 
-$(".FixNav_2phone").hide();
-$(".FixNav_1phone").hide();
-$("j").hide();
-$("jphone").hide();
-
-
-window.onload = function () {
-    var wdth = $(window).width();
-    //FixNav
-    if (wdth < 768) {
-        $(".pcStyle").hide();
-        $(".phoneStyle").show();
-
-    }
-    if (wdth >= 768) {
-        $(".pcStyle").show();
-        $(".phoneStyle").hide();
-    }
-
-
-    if (wdth < 768) {
-        //NavBasWithHierarchy
-        $(".Big").hide();
-        $(".Small").show();
-        $(".Phone").show();
-    }
-    if (wdth >= 768) {
-        //NavBasWithHierarchy
-        $(".Big").show();
-        $(".Small").hide();
-        $(".Phone").hide();
-
-        //NavBas
-        $(".NavBas").show();
-        $(".NavBas_Detail").hide();
-
-    }
-
-    if (wdth >= 1200) {
-        $(".PC").show();
-        $(".tablet").hide();
-    }
-    else {
-        $(".PC").hide();
-        $(".tablet").show();
-    }
-
-};
-
-
-$(document).ready(function () {
-    $(window).resize(function () {//判斷視窗大小 顯示菜單和隱藏菜單
-
-        //FixNav
-        var wdth = $(window).width();
-        if (wdth < 768) {
-            $(".pcStyle").hide();
-            $(".phoneStyle").show();
-
+            $(".leftPanelHi > li").hide();//第二個
+            $(".leftPanelHi").show();//第二個
         }
-        if (wdth >= 768) {
-            $(".pcStyle").show();
-            $(".phoneStyle").hide();
+        if(wdth<768){
+            $(".leftPanel span").show();
+            $(".leftPanel").hide();
+
+            $(".leftPanelHi > li").show();//第二個
+            $(".leftPanelHi").hide();//第二個
         }
-
-
-        if (wdth < 768) {
-            //NavBasWithHierarchy
-            $(".Big").hide();
-            $(".Small").show();
-            $(".Phone").show();
-        }
-        if (wdth >= 768) {
-            //NavBasWithHierarchy
-            $(".Big").show();
-            $(".Small").hide();
-            $(".Phone").hide();
-
-            //NavBas
-            //$(".NavBas").show();
-            //$(".NavBas_Detail").hide();
-
-        }
-
-        if (wdth >= 1200) {
-            $(".PC").show();
-            $(".tablet").hide();
-        }
-        else {
-            $(".PC").hide();
-            $(".tablet").show();
-        }
-
     });
 });
 
+function leftPanel(){
 
-var wdth = $(window).width();
-$("i").mousedown(function () {
-    $(".FixNav_2phone").show('slow');
-    $(".FixNav_1phone").show('slow');
-    $(".FixNavWithHierarchy_phone").show('slow');
-    $("i").hide();
-    $("j").show();
+    $(".hb_leftPM").toggleClass("fa-bars");
+    $(".hb_leftPM").toggleClass("fa-close");
 
-
-    //NavBasWithHierarchy
-    $(".NavBasWithHierarchyPcStyle").animate({ left: "-5px" });
-    $(".divBlack").animate({ left: "-5px" });
-
-    //NavBasUD
-    $(".NavBas").hide();
-    $(".NavBas_Detail").animate({height:'toggle'},700);
-    //NavBasLR
-    $(".NavBas_DetailLR").animate({ left: '15px' });
-
-}
-);
-
-$("j").mousedown(function () {
-    $(".FixNav_2phone").hide('500');
-    $(".FixNav_1phone").hide('500');
-    $(".FixNavWithHierarchy_phone").hide('500');
-    $("j").hide();
-    $("i").show();
-
-    //NavBasWithHierarchy
-    $(".NavBasWithHierarchyPcStyle").animate({ left: "-328px" });
-    $(".divBlack").animate({ left: "-325px" });
-
-    
-    //NavBasUD
-    $(".NavBas").show();
-    $(".NavBas_Detail").hide();
-    //NavBasLR
-    $(".NavBas_DetailLR").animate({ left: '-320px' });
-}
-);
-
-//NavBas，NavBasWithHierarchy
-$("iphone").mousedown(function () {
-
-    $("iphone").hide();
-    $("jphone").show();
-
-    $(".NavBasWithHierarchyPhoneStyle").show('slow');
-    $(".NavBas_phone").show();
-}
-);
-
-$("jphone").mousedown(function () {
-
-    $("jphone").hide();
-    $("iphone").show();
-
-    $(".NavBasWithHierarchyPhoneStyle").hide();
-    $(".NavBas_phone").hide();
-}
-);
-//目錄radio 的控制動作
-$('input:radio').click(function(){
-    var domName = $(this).attr('name');
-    var $radio = $(this);
-    if ($radio.data('waschecked') == true){
-        $radio.prop('checked', false);
-        $("input:radio[name='" + domName + "']").data('waschecked',false);
-    } else {
-        $radio.prop('checked', true);
-        $("input:radio[name='" + domName + "']").data('waschecked',false);
-        $radio.data('waschecked', true);
+    var wdth=$(window).width();
+    if(wdth>=768){
+        $(".leftPanel span").stop().toggle(300);
     }
-    
-});
-   
+    if(wdth<768){
+        $(".leftPanel span").show();
+        $(".leftPanel").stop().slideToggle(300);
+    }
+}
+
+function leftPanelHi(){
+    $(".hb_leftPMHi").toggleClass("fa-bars");
+    $(".hb_leftPMHi").toggleClass("fa-close");
+
+    var wdth=$(window).width();
+    if(wdth>=768){
+        $(".leftPanelHi > li").stop().toggle(300);
+        $(".leftPanelHi").show();
+    }
+    if(wdth<768){
+        $(".leftPanelHi > li").show();
+        $(".leftPanelHi").stop().slideToggle(300);
+    }
+}
+
+function leftPanelHiInside(){
+    $(this).next().stop().slideToggle(200);
+}
