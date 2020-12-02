@@ -19,9 +19,9 @@
     <link href="../css/style_tablet.css" media="screen and (min-width:768px) and (max-width:1199px)" rel="stylesheet" />
     <link href="../css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
 </head>
-
 <body>
     <div class="container-fluid">
+        
         <header class="row edenHeader2">
             <div class="col-12">
                 <h1>
@@ -49,30 +49,74 @@
                 </ul>
             </div>
         </header>
-        
         <div class="row">
-            <div class="offset-sm-1 col-sm-10">
-                <ul>
-                    <li></li>
-                </ul>
-                <div class="rp_ContentDetail">
-                    <div>選單標題</div>
-                    <ul>
-                        <li>
-                            <p>123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456</p>
-                        </li>
-                        <li>
-                            <p>123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456</p>
-                        </li>
-                        <li>123456</li>
-                        <li>123456</li>
-                        <li>123456</li>
-                    </ul>
-                </div>
+            
+            <div class="col-12">
+                <div class="edenMask"></div><!--彈出時產生遮罩用div-->
+                <button class="bt_rightPanel">打開</button>
             </div>
         </div>
+
     </div>
     
+    <div class="rp_Form">
+
+        <form action="">
+            <div class="form-row">
+                <div class="form-group offset-1 col-10" style="text-align: center;">
+                    <h2>標題123456</h2>
+                </div>
+                <div class="form-group col-1">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="edenFooter">
+            <p>電話號碼123456789</p>
+        </div>
+        
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -81,6 +125,6 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="../js/header_animation.js"></script>
-    <script src="../js/leftpanel_animation.js"></script>
-</body>
+    <script src="../js/rightpanel_animation.js"></script>
+
 </html>

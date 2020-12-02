@@ -811,6 +811,11 @@ header .edenUserData:hover {
   background-color: #797979;
 }
 
+i.fa-close, i.fa-thumb-tack {
+  cursor: pointer;
+  font-size: 24px;
+}
+
 .rp_ContentDetail {
   margin-top: 50px;
   word-wrap: break-word;
@@ -835,5 +840,110 @@ header .edenUserData:hover {
 
 .rp_ContentDetail ul li:hover {
   background-color: #ffffff;
+}
+
+.rp_Form {
+  overflow: hidden;
+  z-index: 900;
+  position: absolute;
+  top: 56px;
+  right: 0;
+  height: 93.8%;
+  background-color: aquamarine;
+  border-radius: 2px;
+}
+
+.rp_Form form {
+  margin: 10px;
+  display: none;
+  width: 300px;
+}
+
+.rp_Form form h2 {
+  font-size: 24px;
+}
+
+.rp_Form form label {
+  margin-bottom: 6px;
+}
+
+.rp_Form .edenFooter {
+  width: 300px;
+  text-align: center;
+  display: none;
+  bottom: 10px;
+  position: absolute;
+}
+
+.rp_toDoList {
+  overflow: hidden;
+  z-index: 900;
+  position: absolute;
+  top: 56px;
+  right: 0;
+  height: 93.7%;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+}
+
+.rp_toDoList .rp_title {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  font-size: 24px;
+  -webkit-box-shadow: 0px 6px 6px -6px #000;
+          box-shadow: 0px 6px 6px -6px #000;
+}
+
+.rp_toDoList .rp_target {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.rp_toDoList .rp_target p {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.rp_toDoList .rp_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.rp_toDoList .rp_content p {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.rp_toDoList ul {
+  display: none;
+  width: 300px;
+}
+
+.rp_toDoList ul li > div {
+  padding: 10px 0;
+}
+
+.edenMask {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  display: none;
+  z-Index: 800;
 }
 /*# sourceMappingURL=style_tablet.css.map */

@@ -707,4 +707,10 @@ a {
 .edenClose {
   display: none;
 }
+
+.edenFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=default.css.map */

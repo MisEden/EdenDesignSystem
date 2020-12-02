@@ -19,9 +19,9 @@
     <link href="../css/style_tablet.css" media="screen and (min-width:768px) and (max-width:1199px)" rel="stylesheet" />
     <link href="../css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
 </head>
-
-<body>
+<body style="background-color: burlywood;">
     <div class="container-fluid">
+        
         <header class="row edenHeader2">
             <div class="col-12">
                 <h1>
@@ -49,30 +49,53 @@
                 </ul>
             </div>
         </header>
-        
         <div class="row">
-            <div class="offset-sm-1 col-sm-10">
-                <ul>
-                    <li></li>
-                </ul>
-                <div class="rp_ContentDetail">
-                    <div>選單標題</div>
-                    <ul>
-                        <li>
-                            <p>123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456</p>
-                        </li>
-                        <li>
-                            <p>123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456123456</p>
-                        </li>
-                        <li>123456</li>
-                        <li>123456</li>
-                        <li>123456</li>
-                    </ul>
-                </div>
+            <div class="col-12">
+                <button class="bt_rightPanel2">打開</button>
             </div>
         </div>
+
     </div>
     
+    <div class="rp_toDoList">
+        <ul>
+            <li>
+                <div class="rp_title">
+                    <div class="col-2"><i class="fa fa-thumb-tack"></i></div>
+                    <div class="col-8">我是標題1</div>
+                    <div class="col-2"><i class="fa fa-close"></i></div>
+                </div>
+            </li>
+            <li>
+                <div class="rp_target">
+                    <div class="col-1"><i class="fa fa-book"></i></div>
+                    <div class="col-11">
+                        <h3>11小標題小標題小標題</h3>
+                        <p>我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="rp_content">
+                    <div class="col-1"><i class="fa fa-book"></i></div>
+                    <div class="col-11">
+                        <h3>22小標題小標題小標題</h3>
+                        <p>我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="rp_content">
+                    <div class="col-1"><i class="fa fa-book"></i></div>
+                    <div class="col-11">
+                        <h3>33小標題小標題小標題</h3>
+                        <p>我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -81,6 +104,6 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="../js/header_animation.js"></script>
-    <script src="../js/leftpanel_animation.js"></script>
-</body>
+    <script src="../js/rightpanel_animation.js"></script>
+
 </html>
