@@ -1,6 +1,9 @@
 var flag=true;//釘子功能 將右邊彈出視窗固定
 $(document).ready(function(){
 
+    //ContentDetail.html
+    $(".rp_ContentDetail ul li").click(rightPanel);
+
     //用於Form.html
     $(".bt_rightPanel").click(rightPanel);
     $(".rp_Form form .fa-close").click(rightPanel);
@@ -66,11 +69,17 @@ function rightPanelList(){
 //釘子功能 將右邊彈出視窗固定
 function stopRightPanel(){
     if(flag){
+        $(".fa-thumb-tack").css({
+            "color":"#f66d23"
+        });
         $(".bt_rightPanel2").hide();//隱藏開啟按鈕
         $(".fa-close").hide();
         flag=false;
     }else{
-        $(".bt_rightPanel2").show();//隱藏開啟按鈕
+        $(".fa-thumb-tack").css({
+            "color":"black"
+        });
+        $(".bt_rightPanel2").show();//顯示開啟按鈕
         $(".fa-close").show();
         flag=true;
     }

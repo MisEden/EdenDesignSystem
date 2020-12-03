@@ -32,7 +32,7 @@ header h1 span {
 
 header .edenMenu {
   text-align: center;
-  z-index: 9998;
+  z-index: 200;
 }
 
 header .edenMenu:hover {
@@ -59,7 +59,7 @@ header .edenUserData {
   text-align: center;
   width: 64px;
   height: 64px;
-  z-index: 9999;
+  z-index: 300;
 }
 
 header .edenUserData #edenUserIcon {
@@ -808,6 +808,10 @@ i.fa-close, i.fa-thumb-tack {
   font-size: 24px;
 }
 
+i.fa-thumb-tack:hover {
+  color: #f66d23;
+}
+
 .rp_ContentDetail {
   margin-top: 50px;
   word-wrap: break-word;
@@ -836,11 +840,11 @@ i.fa-close, i.fa-thumb-tack {
 
 .rp_Form {
   overflow: hidden;
-  z-index: 900;
+  z-index: 400;
   position: absolute;
-  top: 64px;
+  top: 0;
   right: 0;
-  height: 93%;
+  height: 100%;
   background-color: aquamarine;
   border-radius: 2px;
 }
@@ -869,11 +873,11 @@ i.fa-close, i.fa-thumb-tack {
 
 .rp_toDoList {
   overflow: hidden;
-  z-index: 900;
+  z-index: 400;
   position: absolute;
-  top: 64px;
+  top: 0px;
   right: 0px;
-  height: 92.7%;
+  height: 100%;
   background-color: #f0f0f0;
   border-radius: 2px;
 }
@@ -883,7 +887,7 @@ i.fa-close, i.fa-thumb-tack {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 0;
+  margin-bottom: 10px;
   padding-bottom: 10px;
   font-size: 24px;
   -webkit-box-shadow: 0px 6px 6px -6px #000;
@@ -936,6 +940,6 @@ i.fa-close, i.fa-thumb-tack {
   filter: alpha(opacity=60);
   opacity: 0.6;
   display: none;
-  z-Index: 800;
+  z-Index: 300;
 }
 /*# sourceMappingURL=style_pc.css.map */

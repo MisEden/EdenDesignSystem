@@ -33,7 +33,7 @@ i.fa-close,i.fa-thumb-tack{
 //Form.html
 .rp_Form{
     overflow: hidden;//避免因為內層col 外擴的px 造成出現滾動條
-    z-index: 900;
+    z-index: 400;
     position: absolute;//浮動在畫面上
     bottom: 0;
     right: 0;
@@ -64,7 +64,7 @@ i.fa-close,i.fa-thumb-tack{
 //ToDoList.html
 .rp_toDoList{
     overflow: hidden;//避免因為內層col 外擴的px 造成出現滾動條
-    z-index: 900;
+    z-index: 400;
     position: absolute;
     bottom: 20px;
     right: 0;
@@ -74,7 +74,7 @@ i.fa-close,i.fa-thumb-tack{
     .rp_title{//標題
         text-align: center;
         display: none;
-        margin: 10px 0;
+        margin-bottom: 10px;
         padding-bottom: 10px;
         font-size: 24px;
         box-shadow:0px 6px 6px -6px #000;
@@ -119,5 +119,5 @@ i.fa-close,i.fa-thumb-tack{
     filter:alpha(opacity=60);
     opacity:0.6;
     display:none; 
-    z-Index:800;
+    z-Index:300;
 }

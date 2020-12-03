@@ -29,7 +29,7 @@ header {
 
     .edenMenu {
         text-align: center;
-        z-index: 9998;
+        z-index: 200;
     }
 
     .edenMenu:hover {
@@ -58,7 +58,7 @@ header {
         text-align: center;
         width: 56px;
         height: 56px;
-        z-index: 9999;
+        z-index: 300;
 
         #edenUserIcon {
             font-size: 24px;

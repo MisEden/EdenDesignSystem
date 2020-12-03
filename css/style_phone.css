@@ -27,7 +27,7 @@ header h1 span {
 
 header .edenMenu {
   text-align: center;
-  z-index: 9998;
+  z-index: 200;
   display: none;
 }
 
@@ -55,7 +55,7 @@ header .edenUserData {
   text-align: center;
   width: 48px;
   height: 48px;
-  z-index: 9999;
+  z-index: 300;
 }
 
 header .edenUserData .sub {
@@ -805,7 +805,7 @@ i.fa-close, i.fa-thumb-tack {
 
 .rp_Form {
   overflow: hidden;
-  z-index: 900;
+  z-index: 400;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -838,7 +838,7 @@ i.fa-close, i.fa-thumb-tack {
 
 .rp_toDoList {
   overflow: hidden;
-  z-index: 900;
+  z-index: 400;
   position: absolute;
   bottom: 20px;
   right: 0;
@@ -850,7 +850,7 @@ i.fa-close, i.fa-thumb-tack {
 .rp_toDoList .rp_title {
   text-align: center;
   display: none;
-  margin: 10px 0;
+  margin-bottom: 10px;
   padding-bottom: 10px;
   font-size: 24px;
   -webkit-box-shadow: 0px 6px 6px -6px #000;
@@ -903,6 +903,6 @@ i.fa-close, i.fa-thumb-tack {
   filter: alpha(opacity=60);
   opacity: 0.6;
   display: none;
-  z-Index: 800;
+  z-Index: 300;
 }
 /*# sourceMappingURL=style_phone.css.map */
