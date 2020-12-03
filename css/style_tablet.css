@@ -820,6 +820,38 @@ i.fa-thumb-tack:hover {
   color: #f66d23;
 }
 
+.rp_title {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  -webkit-box-shadow: 0px 6px 6px -6px #000;
+          box-shadow: 0px 6px 6px -6px #000;
+}
+
+.rp_formTitle {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  -webkit-box-shadow: 0px 6px 6px -6px #000;
+          box-shadow: 0px 6px 6px -6px #000;
+}
+
+.edenFooter {
+  width: 300px;
+  text-align: center;
+  display: none;
+  bottom: 10px;
+  position: absolute;
+}
+
 .rp_ContentDetail {
   margin-top: 50px;
   word-wrap: break-word;
@@ -853,7 +885,7 @@ i.fa-thumb-tack:hover {
   top: 0;
   right: 0;
   height: 100%;
-  background-color: aquamarine;
+  background-color: #f0f0f0;
   border-radius: 2px;
 }
 
@@ -871,14 +903,6 @@ i.fa-thumb-tack:hover {
   margin-bottom: 6px;
 }
 
-.rp_Form .edenFooter {
-  width: 300px;
-  text-align: center;
-  display: none;
-  bottom: 10px;
-  position: absolute;
-}
-
 .rp_toDoList {
   overflow: hidden;
   z-index: 400;
@@ -888,18 +912,6 @@ i.fa-thumb-tack:hover {
   height: 100%;
   background-color: #f0f0f0;
   border-radius: 2px;
-}
-
-.rp_toDoList .rp_title {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  font-size: 24px;
-  -webkit-box-shadow: 0px 6px 6px -6px #000;
-          box-shadow: 0px 6px 6px -6px #000;
 }
 
 .rp_toDoList .rp_target {

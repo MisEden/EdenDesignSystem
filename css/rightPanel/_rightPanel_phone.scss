@@ -3,7 +3,31 @@ i.fa-close,i.fa-thumb-tack{
     cursor: pointer;
     font-size: 24px;
 }
-
+//ToDoList的標題
+.rp_title{
+    text-align: center;
+    display: none;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    box-shadow:0px 6px 6px -6px #000;
+}
+//form和ContentDetail的標題
+.rp_formTitle{
+    text-align: center;
+    display: flex;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    box-shadow:0px 6px 6px -6px #000;
+}
+.edenFooter{
+    width: 99.8%;
+    text-align: center;
+    display: none;
+    bottom: 10px;
+    position:absolute;//浮動在畫面上
+}
 //ContentDetail.html
 .rp_ContentDetail{
     margin-top: 50px;
@@ -37,7 +61,7 @@ i.fa-close,i.fa-thumb-tack{
     position: absolute;//浮動在畫面上
     bottom: 0;
     right: 0;
-    background-color: aquamarine;
+    background-color: #f0f0f0;
     border-radius:2px;
     width: 100%;
     form{
@@ -52,13 +76,6 @@ i.fa-close,i.fa-thumb-tack{
         }
         
     }
-    .edenFooter{
-        width: 99.8%;
-        text-align: center;
-        display: none;
-        bottom: 10px;
-        position:absolute;//浮動在畫面上
-    }
 }
 
 //ToDoList.html
@@ -71,14 +88,7 @@ i.fa-close,i.fa-thumb-tack{
     background-color: #f0f0f0;
     border-radius:2px;
     width: 100%;
-    .rp_title{//標題
-        text-align: center;
-        display: none;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        font-size: 24px;
-        box-shadow:0px 6px 6px -6px #000;
-    }
+    
     .rp_target{//主要目標
         background-color: #ffffff;
         display: flex;
