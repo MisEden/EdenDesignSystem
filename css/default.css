@@ -713,4 +713,8 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
+
+[v-cloak] {
+  display: none !important;
+}
 /*# sourceMappingURL=default.css.map */

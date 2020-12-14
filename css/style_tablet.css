@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background-color: #555555;
   height: 56px;
@@ -961,5 +962,114 @@ i.fa-thumb-tack:hover {
   opacity: 0.6;
   display: none;
   z-Index: 300;
+}
+
+.inputClose {
+  outline: medium;
+  border: none;
+}
+
+.edenMultiTable {
+  text-align: right;
+  position: relative;
+}
+
+.edenMultiTable .tableBar div {
+  background-color: #3B8D71;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edenMultiTable .tableBar div span:nth-child(1) {
+  margin-left: 45px;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+}
+
+.edenMultiTable .tableBar button {
+  background-color: #3B8D71;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+}
+
+.edenMultiTable table {
+  width: 100%;
+  text-align: center;
+  z-index: 200;
+  position: absolute;
+}
+
+.edenMultiTable table tbody {
+  background-color: white;
+  color: #7A5133;
+}
+
+.edenMultiTable table tr {
+  -webkit-box-shadow: 0px 8px 8px -4px #7B7B7B;
+          box-shadow: 0px 8px 8px -4px #7B7B7B;
+}
+
+.edenMultiTable table thead {
+  background-color: #3B8D71;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+}
+
+.edenMultiTable table thead th:nth-child(1) {
+  font-size: 14px;
+  padding: 2px;
+}
+
+.edenMultiTable table input {
+  text-align: center;
+  color: #7A5133;
+}
+
+.edenMultiTable table input[type='checkbox'] {
+  cursor: pointer;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+.edenMultiTable table input[type='checkbox']::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #3B8D71;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  visibility: visible;
+  padding-left: 0px;
+  text-align: center;
+  content: ' ';
+  border: 1px solid black;
+}
+
+.edenMultiTable table input[type='checkbox']:checked::after {
+  content: '✓';
+  font-size: 16px;
+  font-weight: 1000;
 }
 /*# sourceMappingURL=style_tablet.css.map */

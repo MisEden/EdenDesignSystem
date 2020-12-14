@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="網頁的描述 這裡的文字會顯示在搜索後的結果呈現">
+    <meta name="keywords" content="關鍵字" />
+    <meta http-equiv="author" content="HCY" />
+    <title>Document</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--圖示-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--伊甸套版-->
+    <link href="../css/default.css" rel="stylesheet" />
+    <link href="../css/style_pc.css" media="screen and (min-width:1200px)" rel="stylesheet" />
+    <link href="../css/style_tablet.css" media="screen and (min-width:768px) and (max-width:1199px)" rel="stylesheet" />
+    <link href="../css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
+</head>
+
+<body style="background-color: #f5f0e5;">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="edenMultiTable" v-cloak>
+                    <div class="tableBar">
+                        <button>新增</button>
+                        <div>
+                            <span>選擇&nbsp;&nbsp;{{selectNum}}&nbsp;&nbsp;個項目</span>
+                            <span>
+                                <button @click="tableDelete" class="tableDelete"><i class="fa fa-trash"></i>刪除</button>
+                                <button @click="tableDownload"><i class="fa fa-cloud-download"></i>下載</button>
+                                <button @click="tableUpdate" class="tableUpdate"><i class='fa fa-save'></i>儲存</button>
+                                <button @click="tableCancel">取消</button>
+                            </span>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <p>全選</p>
+                                    <input type="checkbox" v-model="isCheckedAll" @click="checkedAll">
+                                </th>
+                                <th>標題1</th>
+                                <th>標題2</th>
+                                <th>標題3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(item,index) in tableData">
+                                <th>
+                                    <input type="checkbox" v-model="selected" :value="item" @click="checked(index)">
+                                </th>
+                                <td>
+                                    <input type="text" v-model="item.user" :class="{'inputClose': checkedArray[index]}" :readonly="checkedArray[index] ? 'readonly' : false">
+                                </td>
+                                <td>
+                                    <input type="text" v-model="item.height" :class="{'inputClose': checkedArray[index]}" :readonly="checkedArray[index] ? 'readonly' : false">
+                                </td>
+                                <td>
+                                    <input type="text" v-model="item.weight" :class="{'inputClose': checkedArray[index]}" :readonly="checkedArray[index] ? 'readonly' : false">
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="../js/table_animation.js"></script>
+    <script>
+        var tableData = [{
+                id: 1,
+                user: "測試姓名",
+                height: 165,
+                weight: 60
+            },
+            {
+                id: 2,
+                user: "測試姓名2",
+                height: 180,
+                weight: 70
+            },
+            {
+                id: 3,
+                user: "測試姓名3",
+                height: 180,
+                weight: 70
+            },
+            {
+                id: 4,
+                user: "測試姓名3",
+                height: 180,
+                weight: 70
+            },
+            {
+                id: 5,
+                user: "測試姓名3",
+                height: 180,
+                weight: 70
+            }
+        ];
+
+        $(document).ready(function () {
+            edenMultiTable(tableData);
+            console.log(edenMultiTable.$data.isCheckedAll);//現在是否為全選
+            console.log(edenMultiTable.$data.selected);//目前勾選的資料
+            console.log(edenMultiTable.$data.tableData);//現在所有資料
+            console.log(edenMultiTable.selectNum);//現在勾選了幾個
+            console.log(edenMultiTable.checkedArray);//現在有哪幾個被勾選 被選為false 沒選到為true
+            console.log(edenMultiTable.$data.tableData);//現在所有資料
+            //edenMultiTable.tableDelete=function(){}//複寫刪除資料方法
+            //edenMultiTable.tableDownload=function(){}//複寫下載資料方法
+            //edenMultiTable.tableUpdate=function(){}//複寫儲存資料方法
+        });
+
+    </script>
+</body>
+
+</html>
