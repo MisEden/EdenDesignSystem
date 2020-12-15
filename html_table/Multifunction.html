@@ -33,10 +33,10 @@
                         <div>
                             <span>選擇&nbsp;&nbsp;{{selectNum}}&nbsp;&nbsp;個項目</span>
                             <span>
-                                <button @click="tableDelete" class="tableDelete"><i class="fa fa-trash"></i>刪除</button>
-                                <button @click="tableDownload"><i class="fa fa-cloud-download"></i>下載</button>
+                                <button @click="tableDelete" class="tableDelete"><i class='fa fa-trash'></i>刪除</button>
+                                <button @click="tableDownload" class="tableDownload"><i class='fa fa-cloud-download'></i>下載</button>
                                 <button @click="tableUpdate" class="tableUpdate"><i class='fa fa-save'></i>儲存</button>
-                                <button @click="tableCancel">取消</button>
+                                <button @click="tableCancel" class="tableCancel"><i class='fa fa-close'></i>取消</button>
                             </span>
                         </div>
                     </div>
@@ -45,7 +45,11 @@
                             <tr>
                                 <th>
                                     <p>全選</p>
-                                    <input type="checkbox" v-model="isCheckedAll" @click="checkedAll">
+                                    <label id="chkLabel_all" for="chkInput_all" onclick="changeImg(this,'');">
+                                        <img id="chkImg_all" src="../images/svg/checkbox.svg" />
+                                    </label>
+                                    <input type="checkbox" id="chkInput_all" v-model="isCheckedAll" @click="checkedAll"/>
+                                    <!-- <input type="checkbox" v-model="isCheckedAll" @click="checkedAll"> -->
                                 </th>
                                 <th>標題1</th>
                                 <th>標題2</th>
@@ -55,16 +59,19 @@
                         <tbody>
                             <tr v-for="(item,index) in tableData">
                                 <th>
-                                    <input type="checkbox" v-model="selected" :value="item" @click="checked(index)">
+                                    <label :id="'chkLabel_'+index" :for="'chkInput_'+index" onclick="changeImg(this);">
+                                        <img :id="'chkImg_'+index" src="../images/svg/checkbox.svg" />
+                                    </label>
+                                    <input type="checkbox" :id="'chkInput_'+index" v-model="selected" :value="item" @click="checked(index)"/>
                                 </th>
                                 <td>
-                                    <input type="text" v-model="item.user" :class="{'inputClose': checkedArray[index]}" :readonly="checkedArray[index] ? 'readonly' : false">
+                                    <input type="text" v-model="item.user" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
                                 </td>
                                 <td>
-                                    <input type="text" v-model="item.height" :class="{'inputClose': checkedArray[index]}" :readonly="checkedArray[index] ? 'readonly' : false">
+                                    <input type="text" v-model="item.height" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
                                 </td>
                                 <td>
-                                    <input type="text" v-model="item.weight" :class="{'inputClose': checkedArray[index]}" :readonly="checkedArray[index] ? 'readonly' : false">
+                                    <input type="text" v-model="item.weight" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
                                 </td>
 
                             </tr>
@@ -76,7 +83,7 @@
         </div>
     </div>
 
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -126,12 +133,11 @@
             console.log(edenMultiTable.$data.tableData);//現在所有資料
             console.log(edenMultiTable.selectNum);//現在勾選了幾個
             console.log(edenMultiTable.checkedArray);//現在有哪幾個被勾選 被選為false 沒選到為true
-            console.log(edenMultiTable.$data.tableData);//現在所有資料
-            //edenMultiTable.tableDelete=function(){}//複寫刪除資料方法
+            //edenMultiTable.tableDelete=function(){};//複寫刪除資料方法
             //edenMultiTable.tableDownload=function(){}//複寫下載資料方法
             //edenMultiTable.tableUpdate=function(){}//複寫儲存資料方法
         });
-
+        
     </script>
 </body>
 

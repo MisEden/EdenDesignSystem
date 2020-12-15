@@ -1,3 +1,40 @@
+$(document).ready(function(){
+    windowsWidthChange();
+    //視窗大小變化時
+    $(window).resize(windowsWidthChange);
+});
+
+//更換checkbox的圖示
+function changeImg(obj) {
+
+    var id =$(obj).attr("id").split('_');//將id拆成陣列 取後面
+    var img_src = $("#chkImg_" + id[1]).attr("src");//取得圖片路徑
+    if(img_src == "../images/svg/checkbox_selected.svg"){//如果是勾選的話
+        $("#chkImg_" + id[1]).attr("src", "../images/svg/checkbox.svg");//更換成取消勾選的圖片
+        $("#chkInput_" + id[2]).attr("checked", false);//更換原本的checkbox為取消勾選
+    }else{
+        $("#chkImg_" + id[1]).attr("src", "../images/svg/checkbox_selected.svg");
+        $("#chkInput_" + id[2]).attr("checked", "checked");
+    }
+    
+}
+
+function windowsWidthChange(){
+    var wdth=$(window).width();//取得目前瀏覽器視窗寬度。 $(window).height() 高度
+    if(wdth>=768){
+        $(".tableDelete").html("<i class='fa fa-trash'></i>刪除");
+        $(".tableDownload").html("<i class='fa fa-cloud-download'></i>下載");
+        $(".tableUpdate").html("<i class='fa fa-save'></i>儲存");
+        $(".tableCancel").html("<i class='fa fa-close'></i>取消");
+    }
+    if(wdth<768){
+        $(".tableDelete").html("<i class='fa fa-trash'></i>");
+        $(".tableDownload").html("<i class='fa fa-cloud-download'></i>");
+        $(".tableUpdate").html("<i class='fa fa-save'></i>");
+        $(".tableCancel").html("<i class='fa fa-close'></i>");
+    }
+}
+
 
 var edenMultiTable; //表格變數
 function edenMultiTable(tableData) {
@@ -38,6 +75,7 @@ function edenMultiTable(tableData) {
         },
         methods: {
             checked: function (index) {
+                
                 this.checkedArray[index] = !this.checkedArray[index];//打勾就把陣列中的true改false
             },
             checkedAll: function () {
@@ -91,3 +129,4 @@ function clearSelect(){
         edenMultiTable.checkedArray[index] = true;
     });
 }
+

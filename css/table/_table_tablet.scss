@@ -1,8 +1,9 @@
 .inputClose {
-    outline: medium;
     border: none;
 }
-
+.inputOpen{
+    border:1px solid #3B8D71;
+}
 .edenMultiTable {
     text-align: right;
     position: relative;
@@ -19,7 +20,7 @@
             align-items: center;
 
             span:nth-child(1) {
-                margin-left: 45px;
+                margin-left: 20px;
                 font-weight: bolder;
                 color: white;
                 font-size: 18px;
@@ -34,6 +35,10 @@
             font-weight: bolder;
             color: white;
             font-size: 18px;
+            i{
+                font-size: 18px;
+                margin-right: 10px;
+            }
         }
     }
 
@@ -60,40 +65,23 @@
                 padding: 2px;
             }
         }
-        input {
-            text-align: center;
-            color: #7A5133;
+        tbody{
+            input {
+                outline: medium;
+                text-align: center;
+                color: #7A5133;
+                width: 100%;
+                padding: 5px 0;
+                border-radius:5px;
+            }
+            th{
+                label{
+                    margin-top: 8px;
+                }
+            }
         }
-
         input[type='checkbox'] {
-            cursor: pointer;
-            position: relative;
-            width: 18px;
-            height: 18px;
-            font-size: 14px;
-            visibility: hidden;
-        }
-
-        input[type='checkbox']::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: #fff;
-            color: #3B8D71;
-            width: 18px;
-            height: 18px;
-            display: inline-block;
-            visibility: visible;
-            padding-left: 0px;
-            text-align: center;
-            content: ' ';
-            border: 1px solid black;
-        }
-
-        input[type='checkbox']:checked::after {
-            content: '✓';
-            font-size: 16px;
-            font-weight: 1000;
+            display: none;
         }
 
     }
