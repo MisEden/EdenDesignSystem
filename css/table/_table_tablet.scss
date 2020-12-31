@@ -4,6 +4,52 @@
 .inputOpen{
     border:1px solid #3B8D71;
 }
+.IndependentTable{
+    table{
+        
+        tbody{
+            tr{
+                box-shadow:0px 8px 8px -4px #7B7B7B;
+            }
+            tr:hover{
+                background-color: #d7d7d7;
+            }
+        }
+    }
+    
+}
+.ExpandableTable{
+    table{
+        th:last-of-type{
+            width: 42px;
+        }
+        td:last-of-type{
+            width: 42px;
+        }
+        tbody{
+            tr:nth-child(odd){
+                box-shadow:0px 8px 8px -4px #7B7B7B;
+                td:last-of-type>i{
+                    color: #ed7d1e;
+                }
+            }
+            tr:nth-child(odd):hover{
+                cursor: pointer;
+            }
+        }
+        .tableDetail{
+            td{
+                display: none;
+                background-color: #d7d7d7;
+            }
+            div{
+                display: none;
+                
+            }
+            
+        }
+    }
+}
 .edenMultiTable {
     text-align: right;
     position: relative;
@@ -40,13 +86,18 @@
                 margin-right: 10px;
             }
         }
+        span{
+            button:hover{
+                box-shadow:0px 0px 0px 1px white;
+            }
+        }
     }
 
     table {
         width: 100%;
         text-align: center;
         z-index: 200;
-        position: absolute;
+        position: relative;
         tbody{
             background-color: white;
             color: #7A5133;

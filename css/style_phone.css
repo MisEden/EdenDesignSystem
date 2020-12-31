@@ -423,33 +423,28 @@ i.fa-close, i.fa-thumb-tack {
   padding: 15px;
 }
 
-.edenMask {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  filter: alpha(opacity=60);
-  opacity: 0.6;
-  display: none;
-  z-Index: 300;
+.inputClose {
+  border: none;
 }
 
-.BaseTable {
+.inputOpen {
+  border: 1px solid #3B8D71;
+}
+
+.PhoneTable {
   overflow-x: auto;
   overflow-y: hidden;
 }
 
-.BaseTable table th {
+.PhoneTable table th {
   min-width: 200px;
 }
 
-.BaseTable table td {
+.PhoneTable table td {
   min-width: 200px;
 }
 
-.BaseTable table th:nth-child(1) {
+.PhoneTable table th:nth-child(1) {
   position: -webkit-sticky;
   position: sticky;
   z-index: 100;
@@ -458,16 +453,53 @@ i.fa-close, i.fa-thumb-tack {
   background-color: #333a40;
 }
 
-.BaseTable table tbody th:nth-child(1) {
+.PhoneTable table tbody th:nth-child(1) {
   color: white;
 }
 
-.inputClose {
-  border: none;
+.IndependentTable table tbody tr {
+  -webkit-box-shadow: 0px 8px 8px -4px #7B7B7B;
+          box-shadow: 0px 8px 8px -4px #7B7B7B;
 }
 
-.inputOpen {
-  border: 1px solid #3B8D71;
+.IndependentTable table tbody tr:hover {
+  background-color: #d7d7d7;
+}
+
+.ExpandableTable table th:last-of-type {
+  min-width: 41px;
+}
+
+.ExpandableTable table td:last-of-type {
+  min-width: 41px;
+}
+
+.ExpandableTable table tbody tr:nth-child(odd) {
+  -webkit-box-shadow: 0px 8px 8px -4px #7B7B7B;
+          box-shadow: 0px 8px 8px -4px #7B7B7B;
+}
+
+.ExpandableTable table tbody tr:nth-child(odd) td:last-of-type > i {
+  color: #ed7d1e;
+}
+
+.ExpandableTable table tbody tr:nth-child(odd):hover {
+  cursor: pointer;
+}
+
+.ExpandableTable table .tableDetail td {
+  display: none;
+  z-index: 400;
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height: 70%;
+  background-color: #d7d7d7;
+}
+
+.ExpandableTable table .tableDetail div {
+  display: none;
 }
 
 .edenMultiTable {
@@ -513,11 +545,16 @@ i.fa-close, i.fa-thumb-tack {
   font-size: 16px;
 }
 
+.edenMultiTable .multiTable {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
 .edenMultiTable table {
   width: 100%;
   text-align: center;
   z-index: 200;
-  position: absolute;
+  position: relative;
 }
 
 .edenMultiTable table tbody {
@@ -542,11 +579,20 @@ i.fa-close, i.fa-thumb-tack {
   padding: 2px;
 }
 
+.edenMultiTable table th:nth-child(1) {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  left: 0;
+  min-width: 40px;
+  background-color: #3B8D71;
+}
+
 .edenMultiTable table tbody input {
   outline: medium;
   text-align: center;
   color: #7A5133;
-  width: 100%;
+  width: 300px;
   padding: 5px 0;
   border-radius: 5px;
 }
@@ -556,7 +602,7 @@ i.fa-close, i.fa-thumb-tack {
 }
 
 .edenMultiTable table tbody th label {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .edenMultiTable table input[type='checkbox'] {

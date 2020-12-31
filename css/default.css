@@ -717,4 +717,17 @@ a {
 [v-cloak] {
   display: none !important;
 }
+
+.edenMask {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  display: none;
+  z-Index: 300;
+}
 /*# sourceMappingURL=default.css.map */

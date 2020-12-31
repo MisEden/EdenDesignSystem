@@ -18,19 +18,22 @@
     <link href="../css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
 </head>
 <body>
+    <div class="edenMask"></div><!--彈出時產生遮罩用div-->
     <br>
     <br>
-    <div class="PhoneTable">
-        <table class="table table-bordered">
+    <div class="ExpandableTable PhoneTable">
+        
+        <table class="table">
             <thead class="table-dark">
                 <tr>
-                    <th>編號</th>
+                    <th scope="col">編號</th>
                     <th>標題1</th>
                     <th>標題2</th>
                     <th>標題3</th>
                     <th>標題4</th>
                     <th>標題5</th>
                     <th>標題6</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -42,6 +45,16 @@
                     <td>測試</td>
                     <td>測試</td>
                     <td>測試</td>
+                    <td><i class="fa fa-chevron-down"></i></td>
+                </tr>
+                <tr class="tableDetail">
+                    <td colspan="8">
+                        <div>
+                            <h3>111111</h3>
+                            <p>111111</p>
+                            <p>111111</p>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th>#2</th>
@@ -51,6 +64,16 @@
                     <td>測試</td>
                     <td>測試</td>
                     <td>測試</td>
+                    <td><i class="fa fa-chevron-down"></i></td>
+                </tr>
+                <tr class="tableDetail">
+                    <td colspan="8">
+                        <div>
+                            <h3>2222222</h3>
+                            <p>2222222</p>
+                            <p>2222222</p>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th>#3</th>
@@ -60,24 +83,16 @@
                     <td>測試</td>
                     <td>測試</td>
                     <td>測試</td>
+                    <td><i class="fa fa-chevron-down"></i></td>
                 </tr>
-                <tr>
-                    <th>#4</th>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
-                </tr>
-                <tr>
-                    <th>#5</th>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
-                    <td>測試</td>
+                <tr class="tableDetail">
+                    <td colspan="8">
+                        <div>
+                            <h3>33333333</h3>
+                            <p>33333333</p>
+                            <p>33333333</p>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -92,6 +107,6 @@
     </script>
     
     <script src="../js/table_animation.js"></script>
-    
+
 </body>
 </html>

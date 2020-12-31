@@ -29,7 +29,7 @@
             <div class="col-lg-12">
                 <div class="edenMultiTable" v-cloak>
                     <div class="tableBar">
-                        <button>新增</button>
+                        <button @click="tableInsert" class="tableInsert">新增</button>
                         <div>
                             <span>選擇&nbsp;&nbsp;{{selectNum}}&nbsp;&nbsp;個項目</span>
                             <span>
@@ -40,44 +40,47 @@
                             </span>
                         </div>
                     </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <p>全選</p>
-                                    <label id="chkLabel_all" for="chkInput_all" onclick="changeImg(this,'');">
-                                        <img id="chkImg_all" src="../images/svg/checkbox.svg" />
-                                    </label>
-                                    <input type="checkbox" id="chkInput_all" v-model="isCheckedAll" @click="checkedAll"/>
-                                    <!-- <input type="checkbox" v-model="isCheckedAll" @click="checkedAll"> -->
-                                </th>
-                                <th>標題1</th>
-                                <th>標題2</th>
-                                <th>標題3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(item,index) in tableData">
-                                <th>
-                                    <label :id="'chkLabel_'+index" :for="'chkInput_'+index" onclick="changeImg(this);">
-                                        <img :id="'chkImg_'+index" src="../images/svg/checkbox.svg" />
-                                    </label>
-                                    <input type="checkbox" :id="'chkInput_'+index" v-model="selected" :value="item" @click="checked(index)"/>
-                                </th>
-                                <td>
-                                    <input type="text" v-model="item.user" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
-                                </td>
-                                <td>
-                                    <input type="text" v-model="item.height" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
-                                </td>
-                                <td>
-                                    <input type="text" v-model="item.weight" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-                    </table>
+                    <div class="multiTable">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <p>全選</p>
+                                        <label id="chkLabel_all" for="chkInput_all" onclick="changeImg(this);">
+                                            <img id="chkImg_all" src="../images/svg/checkbox.svg" />
+                                        </label>
+                                        <input type="checkbox" id="chkInput_all" v-model="isCheckedAll" @click="checkedAll"/>
+    
+                                    </th>
+                                    <th>標題1</th>
+                                    <th>標題2</th>
+                                    <th>標題3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(item,index) in tableData">
+                                    <th>
+                                        <label :id="'chkLabel_'+index" :for="'chkInput_'+index" onclick="changeImg(this);">
+                                            <img :id="'chkImg_'+index" src="../images/svg/checkbox.svg" />
+                                        </label>
+                                        <input type="checkbox" :id="'chkInput_'+index" v-model="selected" :value="item" @click="checked(index)"/>
+                                    </th>
+                                    <td>
+                                        <input type="text" v-model="item.user" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
+                                    </td>
+                                    <td>
+                                        <input type="text" v-model="item.height" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
+                                    </td>
+                                    <td>
+                                        <input type="text" v-model="item.weight" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
+                                    </td>
+    
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -131,6 +134,7 @@
             console.log(edenMultiTable.$data.isCheckedAll);//現在是否為全選
             console.log(edenMultiTable.$data.selected);//目前勾選的資料
             console.log(edenMultiTable.$data.tableData);//現在所有資料
+            
             console.log(edenMultiTable.selectNum);//現在勾選了幾個
             console.log(edenMultiTable.checkedArray);//現在有哪幾個被勾選 被選為false 沒選到為true
             //edenMultiTable.tableDelete=function(){};//複寫刪除資料方法

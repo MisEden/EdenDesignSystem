@@ -2,36 +2,59 @@ $(document).ready(function(){
     windowsWidthChange();
     //視窗大小變化時
     $(window).resize(windowsWidthChange);
+    //點選遮罩時
+    $(".edenMask").click(tableDetailMask);
+    //點選偶數的列表時
+    $(".ExpandableTable tbody tr:even").click(tableDetail);
 });
+
+function tableDetail(){
+    var wdth=$(window).width();//取得目前瀏覽器視窗寬度。 $(window).height() 高度
+    if(wdth<768){
+        $(".edenMask").toggle();//遮罩開關
+    }
+    
+    $(this).next(".tableDetail").find("td").stop().slideToggle();
+    $(this).next(".tableDetail").find("td").find("div").slideToggle();
+}
+function tableDetailMask(){
+    $(".edenMask").hide();//遮罩開關
+    $(".tableDetail").find("td").stop().hide();
+    $(".tableDetail").find("td").find("div").hide();
+}
 
 //更換checkbox的圖示
 function changeImg(obj) {
 
     var id =$(obj).attr("id").split('_');//將id拆成陣列 取後面
     var img_src = $("#chkImg_" + id[1]).attr("src");//取得圖片路徑
+
     if(img_src == "../images/svg/checkbox_selected.svg"){//如果是勾選的話
         $("#chkImg_" + id[1]).attr("src", "../images/svg/checkbox.svg");//更換成取消勾選的圖片
-        $("#chkInput_" + id[2]).attr("checked", false);//更換原本的checkbox為取消勾選
+        $("#chkInput_" + id[1]).attr("checked", false);//更換原本的checkbox為取消勾選
     }else{
         $("#chkImg_" + id[1]).attr("src", "../images/svg/checkbox_selected.svg");
-        $("#chkInput_" + id[2]).attr("checked", "checked");
+        $("#chkInput_" + id[1]).attr("checked", "checked");
     }
-    
+
 }
 
 function windowsWidthChange(){
     var wdth=$(window).width();//取得目前瀏覽器視窗寬度。 $(window).height() 高度
     if(wdth>=768){
+        tableDetailMask();
         $(".tableDelete").html("<i class='fa fa-trash'></i>刪除");
         $(".tableDownload").html("<i class='fa fa-cloud-download'></i>下載");
         $(".tableUpdate").html("<i class='fa fa-save'></i>儲存");
         $(".tableCancel").html("<i class='fa fa-close'></i>取消");
+        $(".tableInsert").html("新增");
     }
     if(wdth<768){
         $(".tableDelete").html("<i class='fa fa-trash'></i>");
         $(".tableDownload").html("<i class='fa fa-cloud-download'></i>");
         $(".tableUpdate").html("<i class='fa fa-save'></i>");
         $(".tableCancel").html("<i class='fa fa-close'></i>");
+        $(".tableInsert").html("<i class='fa fa-plus'></i>");
     }
 }
 
@@ -79,18 +102,24 @@ function edenMultiTable(tableData) {
                 this.checkedArray[index] = !this.checkedArray[index];//打勾就把陣列中的true改false
             },
             checkedAll: function () {
+                $("#chkInput_0").attr("checked", "checked");//更換原本的checkbox為取消勾選
                 this.isCheckedAll = !this.isCheckedAll;
                 if (this.isCheckedAll) { //全選時
-                    this.selected = this.tableData;
+                    this.selected = this.tableData;//將所有資料放入勾選資料陣列
                     this.checkedArray.forEach((valTable, index) => {
-                        this.checkedArray[index] = false;
+                        this.checkedArray[index] = false;//將勾選陣列都改為false 為了input的開關
+                        $("#chkImg_" + index).attr("src", "../images/svg/checkbox_selected.svg");//將所有checkbox的圖片改為勾選的圖片
                     });
                 } else { //全部取消選擇時
-                    this.selected = [];
+                    this.selected = [];//將勾選資料陣列清除
                     this.checkedArray.forEach((valTable, index) => {
-                        this.checkedArray[index] = true;
+                        this.checkedArray[index] = true;//將勾選陣列都改為true 為了input的開關
+                        $("#chkImg_" + index).attr("src", "../images/svg/checkbox.svg");//將所有checkbox的圖片改為取消勾選的圖片
                     });
                 }
+            },
+            tableInsert:function(){
+
             },
             tableDelete: function () {
                 // let newData = [];
@@ -127,6 +156,7 @@ function clearSelect(){
     edenMultiTable.$data.selected = [];//清除所選
     edenMultiTable.checkedArray.forEach((valTable, index) => {//清除所選的陣列
         edenMultiTable.checkedArray[index] = true;
+        $("#chkImg_" + index).attr("src", "../images/svg/checkbox.svg");//將所有checkbox的圖片改為取消勾選的圖片
     });
 }
 

@@ -4,3 +4,5 @@ edenUserData        上方抬頭的使用者菜單    300
 rp_Form             右邊彈出菜單            400
 rp_toDoList         右邊彈出菜單            400
 edenMask            畫面遮罩                300
+th:nth-child(1)     手機的表格左邊小標題    100
+tableDetail         手機的表格 彈出詳細內容 400

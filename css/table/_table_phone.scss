@@ -1,8 +1,11 @@
-// ::-webkit-scrollbar {
-//     /*隱藏滾輪*/
-//     display: none;
-// }
-.BaseTable{
+.inputClose {
+    border: none;
+}
+.inputOpen{
+    border:1px solid #3B8D71;
+}
+
+.PhoneTable{
     overflow-x: auto;
     overflow-y: hidden;
     table{
@@ -28,12 +31,57 @@
         }
     }
 }
-
-.inputClose {
-    border: none;
+.IndependentTable{
+    table{
+        
+        tbody{
+            tr{
+                box-shadow:0px 8px 8px -4px #7B7B7B;
+            }
+            tr:hover{
+                background-color: #d7d7d7;
+            }
+        }
+    }
+    
 }
-.inputOpen{
-    border:1px solid #3B8D71;
+.ExpandableTable{
+    table{
+        th:last-of-type{
+            min-width: 41px;
+        }
+        td:last-of-type{
+            min-width: 41px;
+        }
+        tbody{
+            tr:nth-child(odd){
+                box-shadow:0px 8px 8px -4px #7B7B7B;
+                td:last-of-type>i{
+                    color: #ed7d1e;
+                }
+            }
+            tr:nth-child(odd):hover{
+                cursor: pointer;
+            }
+        }
+        .tableDetail{
+            td{
+                display: none;
+                z-index: 400;
+                position: fixed;
+                top: 10%;
+                left: 20%;
+                width: 60%;
+                height: 70%;
+                background-color: #d7d7d7;
+            }
+            div{
+                display: none;
+                
+            }
+            
+        }
+    }
 }
 .edenMultiTable {
     text-align: right;
@@ -71,12 +119,15 @@
             }
         }
     }
-
+    .multiTable{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
     table {
         width: 100%;
         text-align: center;
         z-index: 200;
-        position: absolute;
+        position: relative;
         tbody{
             background-color: white;
             color: #7A5133;
@@ -95,19 +146,27 @@
                 padding: 2px;
             }
         }
+        th:nth-child(1){
+            position: sticky;
+            z-index:100;
+            left: 0;
+            min-width: 40px;
+            background-color: #3B8D71;
+        }
+
         tbody{
             input {
                 outline: medium;
                 text-align: center;
                 color: #7A5133;
-                width: 100%;
+                width: 300px;
                 padding: 5px 0;
                 border-radius:5px;
             }
             th{
                 padding: 0px;
                 label{
-                    margin-top: 15px;
+                    margin-top: 18px;
                 }
             }
         }
