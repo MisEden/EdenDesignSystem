@@ -484,6 +484,10 @@ i.fa-thumb-tack:hover {
   display: none;
 }
 
+.ExpandableTable table .tableDetail div .tableDetailClose {
+  display: none;
+}
+
 .edenMultiTable {
   text-align: right;
   position: relative;

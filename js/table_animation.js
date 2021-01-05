@@ -2,8 +2,9 @@ $(document).ready(function(){
     windowsWidthChange();
     //視窗大小變化時
     $(window).resize(windowsWidthChange);
-    //點選遮罩時
+    //點選遮罩或手機畫面時的x 進行開關
     $(".edenMask").click(tableDetailMask);
+    $(".tableDetailClose").click(tableDetailMask);
     //點選偶數的列表時
     $(".ExpandableTable tbody tr:even").click(tableDetail);
 });
@@ -57,7 +58,6 @@ function windowsWidthChange(){
         $(".tableInsert").html("<i class='fa fa-plus'></i>");
     }
 }
-
 
 var edenMultiTable; //表格變數
 function edenMultiTable(tableData) {
@@ -118,27 +118,10 @@ function edenMultiTable(tableData) {
                     });
                 }
             },
-            tableInsert:function(){
-
-            },
-            tableDelete: function () {
-                // let newData = [];
-                // this.tableData.forEach((valTable, index) => {
-                //     if (!(this.selected.indexOf(valTable) > -1)) {
-                //         newData.push(valTable);
-                //     }
-                // });
-
-                // this.tableData = newData;
-                // this.selected = [];
-                // this.isCheckedAll = false;
-            },
-            tableDownload: function () {
-
-            },
-            tableUpdate: function () {
-
-            },
+            tableInsert:tableInsert,
+            tableDelete:tableDelete,
+            tableDownload: tableDownload,
+            tableUpdate: tableUpdate,
             tableCancel: clearSelect
         }
     });
@@ -147,9 +130,8 @@ function edenMultiTable(tableData) {
 
     $(".tableUpdate").click(clearSelect);//不能被複寫的更新行為
     $(".tableDelete").click(clearSelect);//不能被複寫的刪除行為
-
-    
 }
+
 //刪除或取消或更新 都必須將所選重新清除 
 function clearSelect(){
     edenMultiTable.$data.isCheckedAll = false;//清除全選
@@ -160,3 +142,93 @@ function clearSelect(){
     });
 }
 
+//新增資料
+function tableInsert(){
+    // $.ajax({
+    //     url:"",
+    //     typr:"POST",
+    //     data:"",
+    //     contenType:"application/json charset=utf-8",
+    //     success:function(data){
+    //         alert("request Success!"+data);
+    //         edenMultiTable.$data.tableData.push(data);
+    //     },
+    //     error : function() { 
+    //         alert("異常！"); 
+    //     } 
+    // });
+    edenMultiTable.$data.tableData.push({
+        id: 0,
+        user: "",
+        height: 0,
+        weight: 0
+    });
+}
+
+//刪除資料
+function tableDelete(){
+    // $.ajax({
+    //     url:"",
+    //     typr:"DELETE",
+    //     data:edenMultiTable.$data.selected,
+    //     contenType:"application/json charset=utf-8",
+    //     success:function(data){
+    //         alert("request Success!"+data);
+    //         let newData = [];
+    //         this.tableData.forEach((valTable, index) => {
+    //             if (!(this.selected.indexOf(valTable) > -1)) {
+    //                 newData.push(valTable);
+    //             }
+    //         });
+
+    //         this.tableData = newData;
+    //         this.selected = [];
+    //         this.isCheckedAll = false;
+    //     },
+    //     error : function() { 
+    //         alert("異常！"); 
+    //     } 
+    // });
+        let newData = [];
+        this.tableData.forEach((valTable, index) => {
+            if (!(this.selected.indexOf(valTable) > -1)) {
+                newData.push(valTable);
+            }
+        });
+
+        this.tableData = newData;
+        this.selected = [];
+        this.isCheckedAll = false;
+}
+
+//下載資料
+function tableDownload(){
+    $.ajax({
+        url:"",
+        typr:"POST",
+        data:"",
+        contenType:"application/json charset=utf-8",
+        success:function(data){
+            alert("request Success!"+data);
+        },
+        error : function() { 
+            alert("異常！"); 
+        } 
+    });
+}
+
+//儲存資料
+function tableUpdate(){
+    $.ajax({
+        url:"",
+        typr:"PUT",
+        data:edenMultiTable.$data.selected,
+        contenType:"application/json charset=utf-8",
+        success:function(data){
+            alert("request Success!"+data);
+        },
+        error : function() { 
+            alert("異常！"); 
+        } 
+    });
+}

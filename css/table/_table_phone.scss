@@ -77,7 +77,10 @@
             }
             div{
                 display: none;
-                
+                .tableDetailClose{
+                    color: #ed7d1e;
+                    text-align: right;
+                }
             }
             
         }

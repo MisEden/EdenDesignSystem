@@ -502,6 +502,11 @@ i.fa-close, i.fa-thumb-tack {
   display: none;
 }
 
+.ExpandableTable table .tableDetail div .tableDetailClose {
+  color: #ed7d1e;
+  text-align: right;
+}
+
 .edenMultiTable {
   text-align: right;
   position: relative;

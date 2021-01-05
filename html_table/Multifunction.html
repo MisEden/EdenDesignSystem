@@ -65,6 +65,9 @@
                                         </label>
                                         <input type="checkbox" :id="'chkInput_'+index" v-model="selected" :value="item" @click="checked(index)"/>
                                     </th>
+                                    
+                                    <input type="hidden" v-model="item.id">
+                                    
                                     <td>
                                         <input type="text" v-model="item.user" :class="[checkedArray[index] ? 'inputClose':'inputOpen']" :readonly="checkedArray[index] ? 'readonly' : false">
                                     </td>
@@ -134,9 +137,10 @@
             console.log(edenMultiTable.$data.isCheckedAll);//現在是否為全選
             console.log(edenMultiTable.$data.selected);//目前勾選的資料
             console.log(edenMultiTable.$data.tableData);//現在所有資料
-            
             console.log(edenMultiTable.selectNum);//現在勾選了幾個
             console.log(edenMultiTable.checkedArray);//現在有哪幾個被勾選 被選為false 沒選到為true
+
+            //edenMultiTable.$data.tableData.push(data);//新增資料
             //edenMultiTable.tableDelete=function(){};//複寫刪除資料方法
             //edenMultiTable.tableDownload=function(){}//複寫下載資料方法
             //edenMultiTable.tableUpdate=function(){}//複寫儲存資料方法
