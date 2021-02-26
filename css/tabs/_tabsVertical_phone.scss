@@ -1,20 +1,12 @@
-.tabVerSub70{
-    width: 70%;
-}
 
 .edenTabsV1{
     display: flex;
     .edenTabsV1Left{
         display: flex;
         flex-direction : column;			//上排到下
-        width: 30%;
-        span{//讓裡面的文字能夠隨著外面寬度自動換行
-            margin:0;
-            width: 100%;
-            height: auto;
-            word-wrap:break-word;
-            word-break:break-all;
-            overflow: hidden;
+        width: 10%;
+        span{
+            display: none;
         }
         .tab1{
             background-color: #f2f2f2;
@@ -22,9 +14,10 @@
         }
         a{
             background-color: #4d4d4d;
-            height: 100px;
-            padding: 20px;
+            height: 150px;
+            padding: 5px;
             color: #f2f2f2;
+            text-align: center;
             h3{
                 margin:0.2em 0;
                 font-size: 1.5em;
@@ -39,12 +32,19 @@
 }
 
 .edenTabsV2{
-    display: flex;
+
+    //左邊選單 手機板 變成在中間
     .edenTabsV2Left{
         display: flex;
+        position: absolute;
+        z-index: 301;//因為遮罩是300 這裡要比遮罩高
+        top: 10%;
+        left: 10%;
+        width: 80%;
+
         flex-direction : column;			//上排到下
-        width: 30%;
-        background-color: #f2f2f2;
+        
+        background-color: #bbbbbb;
         a:link{
             color:black;
         }
@@ -84,29 +84,50 @@
         }
     }
 
+    //右邊頁面 手機板 變成全畫面
+    .edenTabsV2Sub{
+        width: 100%;
+    }
+
+    //手機板 多出按鈕 彈出選單
+    .edenTabsV2Button{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        i{
+            font-size: 25px;
+            background-color: #f46c23;
+            color: white;
+            padding: 15px;
+            border-radius: 30px;
+            cursor: pointer; //手型，表示超連結
+        }
+    }
+
 }
 
 .edenTabsV3{
     display: flex;
 
     .edenTabsV3Left{
-        flex: 1 1 150px;//佔據4分之1
+        flex: 1 1 20px;//佔據4分之1
         display: flex;
         .edenTabsV3Line{
             position: relative;//以父框架做定位 改變位置
-            left: 16px;
+            left: 18px;
             border-right: 8px solid #f46c23;
             height: 0%;
         }
         .edenTabsV3Title{
             display: flex;//浮動盒子 為了上下的每個區塊充滿
             flex-direction : column;//改成上下排列
-            border-left: 4px solid #eeeeee;
+            border-left: 8px solid #cccccc;
             margin: 0 10px;
-            .v3LTab1{
+            .stepOn{
                 display: flex;
                 flex:1;
                 span{
+                    display: none;
                     margin: 0 10px;
                     flex:0 0 53px;
                     font-weight:bold;
@@ -118,6 +139,7 @@
                     color: white;
                 }
                 a{
+                    display: none;
                     color: #f46c23;
                     h3{
                         margin: 14px 0px;
@@ -133,10 +155,11 @@
                     }
                 }
             }
-            .v3LTab2{
+            .stepOff{
                 display: flex;
                 flex:1;
                 span{
+                    display: none;
                     margin: 0 10px;
                     flex:0 0 53px;
                     font-weight:bold;
@@ -148,6 +171,7 @@
                     color: white;
                 }
                 a{
+                    display: none;
                     color: #7b7b7b;
                     h3{
                         margin: 14px 0px;
@@ -166,7 +190,7 @@
         }
     }
     .edenTabsV3Right{
-        flex: 3 3 300px;//佔據4分之3
+        flex: 5 5 300px;//佔據4分之3
         display: flex;
         flex-direction : column;//改成上下排列
         .v3RTab1{

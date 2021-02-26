@@ -409,122 +409,6 @@ a {
   margin-top: 65px;
 }
 
-.tabVerSub70 {
-  width: 70%;
-}
-
-.edenTabsV1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.edenTabsV1 .edenTabsV1Left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%;
-}
-
-.edenTabsV1 .edenTabsV1Left span {
-  margin: 0;
-  width: 100%;
-  height: auto;
-  word-wrap: break-word;
-  word-break: break-all;
-  overflow: hidden;
-}
-
-.edenTabsV1 .edenTabsV1Left .tab1 {
-  background-color: #f2f2f2;
-  color: black;
-}
-
-.edenTabsV1 .edenTabsV1Left a {
-  background-color: #4d4d4d;
-  height: 100px;
-  padding: 20px;
-  color: #f2f2f2;
-}
-
-.edenTabsV1 .edenTabsV1Left a h3 {
-  margin: 0.2em 0;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.edenTabsV1 .edenTabsV1Left a:hover {
-  background-color: #797979;
-}
-
-.edenTabsV2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.edenTabsV2 .edenTabsV2Left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%;
-  background-color: #f2f2f2;
-}
-
-.edenTabsV2 .edenTabsV2Left a:link {
-  color: black;
-}
-
-.edenTabsV2 .edenTabsV2Left a:visited {
-  color: black;
-}
-
-.edenTabsV2 .edenTabsV2Left a:hover {
-  color: black;
-}
-
-.edenTabsV2 .edenTabsV2Left a:active {
-  color: black;
-}
-
-.edenTabsV2 .edenTabsV2Left span {
-  margin: 0;
-  width: 100%;
-  height: auto;
-  word-wrap: break-word;
-  word-break: break-all;
-  overflow: hidden;
-}
-
-.edenTabsV2 .edenTabsV2Left .tab1 {
-  background-color: white;
-  color: #797979;
-}
-
-.edenTabsV2 .edenTabsV2Left a {
-  height: 100px;
-  margin: 15px;
-  padding: 15px;
-}
-
-.edenTabsV2 .edenTabsV2Left a h3 {
-  margin: 0.2em 0;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.edenTabsV2 .edenTabsV2Left a:hover {
-  border: black solid 2px;
-}
-
 .edenTabsV3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,7 +443,7 @@ a {
   margin: 0 10px;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,7 +452,7 @@ a {
           flex: 1;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 span {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOn span {
   margin: 0 10px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 53px;
@@ -582,17 +466,17 @@ a {
   color: white;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 a {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOn a {
   color: #f46c23;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 a h3 {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOn a h3 {
   margin: 14px 0px;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab1 a p {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOn a p {
   width: 100%;
   height: auto;
   word-wrap: break-word;
@@ -600,7 +484,7 @@ a {
   overflow: hidden;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOff {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,7 +493,7 @@ a {
           flex: 1;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 span {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOff span {
   margin: 0 10px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 53px;
@@ -623,17 +507,17 @@ a {
   color: white;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 a {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOff a {
   color: #7b7b7b;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 a h3 {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOff a h3 {
   margin: 14px 0px;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .v3LTab2 a p {
+.edenTabsV3 .edenTabsV3Left .edenTabsV3Title .stepOff a p {
   width: 100%;
   height: auto;
   word-wrap: break-word;

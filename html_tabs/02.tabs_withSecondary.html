@@ -16,45 +16,34 @@
     <link href="../css/style_pc.css" media="screen and (min-width:1200px)" rel="stylesheet" />
     <link href="../css/style_tablet.css" media="screen and (min-width:768px) and (max-width:1199px)" rel="stylesheet" />
     <link href="../css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
- </head>
-
+</head>
 <body>
     <!--tabs group-->
-    <div>
-        <div class="edenTabsV1">
-            <div class="edenTabsV1Left" id="edenTabs">
-                <a href="#page1" class="tab1">
-                    <h3>Tab 1</h3>
-                    <span>DetailDetailDetailDetailDetailDetailDetail</span>
-                </a>
-                <a href="#page2">
-                    <h3>Tab 2</h3>
-                    <span>DetailDetailDetailDetailDetailDetailDetail</span>
-                </a>
-                <a href="#page3">
-                    <h3>Tab 3</h3>
-                    <span>DetailDetailDetailDetailDetailDetailDetail</span>
-                </a>
-                <a href="#page4">
-                    <h3>Tab 4</h3>
-                    <span>DetailDetailDetailDetailDetailDetailDetail</span>
-                </a>
-                <a href="#page5">
-                    <h3>Tab 5</h3>
-                    <span>DetailDetailDetailDetailDetailDetailDetail</span>
-                </a>
-            </div>
-
-            <!--tabs group-->
-            <div class="edenTabsSub tabVerSub70">
-                <div class="tab1" id="page1">1123456478978978643123</div>
-                <div class="tab2" id="page2">2</div>
-                <div class="tab2" id="page3">3</div>
-                <div class="tab2" id="page4">4</div>
-                <div class="tab2" id="page5">5</div>
-            </div>
-        </div>
+    <div class="edenTabsHorizontal">
+        <a href="#" class="tab1">Tab1</a>
+        <a href="#">Tab1</a>
+        <a href="#">Tab1</a>
+        <a href="#">Tab1</a>
     </div>
+    
+    <div class="edenTabsWithSecondary" id="edenTabs">
+        <a href="#page1" class="tab1">Tab1</a>
+        <a href="#page2">Tab2</a>
+        <a href="#page3">Tab3</a>
+        <a href="#page4">Tab4</a>
+        <a href="#page5">Tab5</a>
+        <a href="#page6">Tab6</a>
+    </div>
+    <!--tabs group-->
+    <div class="edenTabsSub">
+        <div id="page1" class="tab1">1</div>
+        <div id="page2">2</div>
+        <div id="page3">3</div>
+        <div id="page4">4</div>
+        <div id="page5">5</div>
+        <div id="page6">6</div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -63,7 +52,5 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="../js/tabs_animation.js"></script>
-
 </body>
-
 </html>

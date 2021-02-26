@@ -16,45 +16,49 @@
     <link href="../css/style_pc.css" media="screen and (min-width:1200px)" rel="stylesheet" />
     <link href="../css/style_tablet.css" media="screen and (min-width:768px) and (max-width:1199px)" rel="stylesheet" />
     <link href="../css/style_phone.css" media="screen and (max-width:767px)" rel="stylesheet" />
-</head>
+ </head>
+
 <body>
-    
-    <div class="edenTabsH4" id="edenTabs">
-        <a href="#page1" class="tab1">
-            <span>1</span>
-            <div></div>
-            <div></div>
-        </a>
-        <a href="#page2">
-            <span>2</span>
-            <div></div>
-            <div></div>
-        </a>
-        <a href="#page3">
-            <span>3</span>
-            <div></div>
-            <div></div>
-        </a>
-        <a href="#page4">
-            <span>4</span>
-            <div></div>
-            <div></div>
-        </a>
-        <a href="#page5">
-            <span>5</span>
-            <div></div>
-            <div></div>
-        </a>
+
+    <div class="edenTabsV2">
+        <div class="edenTabsV2Left" id="edenTabsV2">
+            <a href="#page1" class="tab1">
+                <h3>Tab 1</h3>
+                <span>DetailDetailDetailDetailDetailDetailDetail</span>
+            </a>
+            <a href="#page2">
+                <h3>Tab 2</h3>
+                <span>DetailDetailDetailDetailDetailDetailDetail</span>
+            </a>
+            <a href="#page3">
+                <h3>Tab 3</h3>
+                <span>DetailDetailDetailDetailDetailDetailDetail</span>
+            </a>
+            <a href="#page4">
+                <h3>Tab 4</h3>
+                <span>DetailDetailDetailDetailDetailDetailDetail</span>
+            </a>
+            <a href="#page5">
+                <h3>Tab 5</h3>
+                <span>DetailDetailDetailDetailDetailDetailDetail</span>
+            </a>
+        </div>
+
+        <div class="edenMask"></div><!--彈出時產生遮罩用div-->
+
+        <div class="edenTabsV2Button">
+            <i class="fa fa-th-large"></i>
+        </div>
+        
+        <div class="edenTabsSub edenTabsV2Sub">
+            <div class="tab1" id="page1">1</div>
+            <div class="tab2" id="page2">2</div>
+            <div class="tab2" id="page3">3</div>
+            <div class="tab2" id="page4">4</div>
+            <div class="tab2" id="page5">5</div>
+        </div>
     </div>
 
-    <!--tabs group-->
-    <div class="edenTabsSub">
-        <div id="page1" class="tab1">1</div>
-        <div id="page2">2</div>
-        <div id="page3">3</div>
-        <div id="page4">4</div>
-        <div id="page5">5</div>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -64,5 +68,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="../js/tabs_animation.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,206 @@
+
+.edenTabsV1{
+    display: flex;
+    .edenTabsV1Left{
+        display: flex;
+        flex-direction : column;			//上排到下
+        width: 30%;
+        span{//讓裡面的文字能夠隨著外面寬度自動換行
+            margin:0;
+            width: 100%;
+            height: auto;
+            word-wrap:break-word;
+            word-break:break-all;
+            overflow: hidden;
+        }
+        .tab1{
+            background-color: #f2f2f2;
+            color: black;
+        }
+        a{
+            background-color: #4d4d4d;
+            height: 100px;
+            padding: 20px;
+            color: #f2f2f2;
+            h3{
+                margin:0.2em 0;
+                font-size: 1.5em;
+                font-weight:bold;
+            }
+        }
+        a:hover{
+            background-color: #797979;
+        }
+    }
+
+}
+
+.edenTabsV2{
+    display: flex;
+    .edenTabsV2Left{
+        display: flex;
+        flex-direction : column;			//上排到下
+        width: 30%;
+        background-color: #bbbbbb;
+        a:link{
+            color:black;
+        }
+        a:visited {
+            color:black;
+        }
+        a:hover{
+            color:black;
+        }
+        a:active{
+            color:black;
+        }
+        span{//讓裡面的文字能夠隨著外面寬度自動換行
+            margin:0;
+            width: 100%;
+            height: auto;
+            word-wrap:break-word;
+            word-break:break-all;
+            overflow: hidden;
+        }
+        .tab1{
+            background-color: white;
+            color: #797979;
+        }
+        a{
+            height: 100px;
+            margin: 15px;
+            padding: 15px;
+            h3{
+                margin:0.2em 0;
+                font-size: 1.5em;
+                font-weight:bold;
+            }
+        }
+        a:hover{
+            border: black solid 2px;
+        }
+    }
+    .edenTabsV2Sub{
+        width: 70%;
+    }
+    .edenTabsV2Button{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        display: none;
+    }
+}
+
+.edenTabsV3{
+    display: flex;
+
+    .edenTabsV3Left{
+        flex: 1 1 150px;//佔據4分之1
+        display: flex;
+        .edenTabsV3Line{
+            position: relative;//以父框架做定位 改變位置
+            left: 18px;
+            border-right: 8px solid #f46c23;
+            height: 0%;
+        }
+        .edenTabsV3Title{
+            display: flex;//浮動盒子 為了上下的每個區塊充滿
+            flex-direction : column;//改成上下排列
+            border-left: 8px solid #cccccc;
+            margin: 0 10px;
+
+            .stepOn{
+                display: flex;
+                flex:1;
+                span{
+                    margin: 0 10px;
+                    flex:0 0 53px;
+                    font-weight:bold;
+                    font-size: 20px;
+                    background-image: url("tabs/img/橘色圓形.svg");
+                    background-repeat:no-repeat;
+                    text-align: center;
+                    line-height: 53px;
+                    color: white;
+                }
+                a{
+                    color: #f46c23;
+                    h3{
+                        margin: 14px 0px;
+                        font-size: 1.5em;
+                        font-weight:bold;
+                    }
+                    p{//自動換行設定
+                        width: 100%;
+                        height: auto;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .stepOff{
+                display: flex;
+                flex:1;
+                span{
+                    margin: 0 10px;
+                    flex:0 0 53px;
+                    font-weight:bold;
+                    font-size: 20px;
+                    background-image: url("tabs/img/灰色圓形.svg");
+                    background-repeat:no-repeat;
+                    text-align: center;
+                    line-height: 53px;
+                    color: white;
+                }
+                a{
+                    color: #7b7b7b;
+                    h3{
+                        margin: 14px 0px;
+                        font-size: 1.5em;
+                        font-weight:bold;
+                    }
+                    p{//自動換行設定
+                        width: 100%;
+                        height: auto;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+    .edenTabsV3Right{
+        flex: 3 3 300px;//佔據4分之3
+        display: flex;
+        flex-direction : column;//改成上下排列
+        .v3RTab1{
+            flex:9;
+        }
+        .v3RTab2{
+            flex:9;
+            display: none;
+        }
+        .btV3{
+            display: flex;
+            justify-content:space-around;
+            flex:1;
+            button{
+                height: 36px;
+                color: white;
+                font-weight: bolder;
+                background-color: #f46c23;
+                padding: 0 35px;
+                border-radius: 0.3em;
+                font-size: 110%;
+                box-shadow: 3px 3px 3px #a8a8a8;
+                border: 0;
+                outline:none;//按鈕會有預設的點擊外框線
+            }
+            button:hover{
+                background-color: #797979;
+            }
+        }
+    }
+}
